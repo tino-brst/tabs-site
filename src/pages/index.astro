@@ -1,7 +1,19 @@
 ---
+import { getCollection } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
+
+const tabs = await getCollection('tabs')
 ---
 
 <Layout title="Tino's Tabs">
   <div class="text-stone-500">Hello there!</div>
+  <ul>
+    {
+      tabs.map((tab) => (
+        <li>
+          <a href={`/${tab.slug}`}>{tab.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
 </Layout>
