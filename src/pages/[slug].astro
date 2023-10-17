@@ -1,22 +1,25 @@
 ---
-import type { InferGetStaticParamsType, GetStaticPaths } from 'astro'
+import type { InferGetStaticPropsType, GetStaticPaths } from 'astro'
 import { getCollection } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
 
 export const getStaticPaths = (async () => {
   const tabs = await getCollection('tabs')
 
-  return tabs.map((post) => ({
-    params: { slug: post.slug },
+  return tabs.map((tab) => ({
+    params: { slug: tab.slug },
+    props: tab,
   }))
 }) satisfies GetStaticPaths
 
-type Params = InferGetStaticParamsType<typeof getStaticPaths>
+type Props = InferGetStaticPropsType<typeof getStaticPaths>
 
-const params = Astro.params as Params
+const tab = Astro.props as Props
+const data = tab.data
+const { Content } = await tab.render()
 ---
 
-<Layout title="Tino's Tabs">
+<Layout title={`${data.title} - Tino's Tabs`}>
   <div class="text-stone-500">Tab!</div>
-  <code>/{params.slug}</code>
+  <Content />
 </Layout>
