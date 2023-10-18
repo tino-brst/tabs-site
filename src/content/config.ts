@@ -5,7 +5,11 @@ const tabs = defineCollection({
   type: 'content',
   schema: ({image}) => z.object({
     title: z.string(),
-    albumImage: image(),
+    album: z.string(),
+    artist: z.string(),
+    albumImageURL: image(),
+    artistImageURL: image(),
+
   }),
 })
 

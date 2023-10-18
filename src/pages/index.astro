@@ -12,7 +12,7 @@ const tabs = await getCollection('tabs')
     {
       tabs.map((tab) => (
         <li class="flex gap-2 items-center">
-					<Image src={tab.data.albumImage} alt="Album Cover" class="h-5 w-5 object-cover" />
+					<Image src={tab.data.albumImageURL} alt="Album Cover" class="h-5 w-5 object-cover" />
           <a href={`/${tab.slug}`}>{tab.data.title}</a>
         </li>
       ))
