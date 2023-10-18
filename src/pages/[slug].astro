@@ -2,6 +2,7 @@
 import type { InferGetStaticPropsType, GetStaticPaths } from 'astro'
 import { getCollection } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
+import { Image } from 'astro:assets'
 
 export const getStaticPaths = (async () => {
   const tabs = await getCollection('tabs')
@@ -21,5 +22,6 @@ const { Content } = await tab.render()
 
 <Layout title={`${data.title} - Tino's Tabs`}>
   <div class="text-stone-500">Tab!</div>
+  <Image src={data.albumImage} alt='Album Cover' title='Album Cover'/>
   <Content />
 </Layout>

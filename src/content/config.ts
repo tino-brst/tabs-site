@@ -3,8 +3,9 @@ import { defineCollection } from 'astro:content'
 
 const tabs = defineCollection({
   type: 'content',
-  schema: z.object({
+  schema: ({image}) => z.object({
     title: z.string(),
+    albumImage: image(),
   }),
 })
 
