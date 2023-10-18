@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
+import { Image } from 'astro:assets'
 
 const tabs = await getCollection('tabs')
 ---
@@ -10,7 +11,8 @@ const tabs = await getCollection('tabs')
   <ul>
     {
       tabs.map((tab) => (
-        <li>
+        <li class="flex gap-2 items-center">
+					<Image src={tab.data.albumImage} alt="Album Cover" class="h-5 w-5 object-cover" />
           <a href={`/${tab.slug}`}>{tab.data.title}</a>
         </li>
       ))
