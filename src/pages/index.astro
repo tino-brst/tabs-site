@@ -1,19 +1,75 @@
 ---
-import { getCollection } from 'astro:content'
+import { getCollection, type CollectionEntry } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
 import { Image } from 'astro:assets'
 
+function toTabGroups(tabs: Array<CollectionEntry<'tabs'>>) {
+  // 'Foo': [tab, tab, ...]
+  // 'Bar': [tab, tab, ...]
+  const tabsByArtistMap = tabs.reduce<
+    Map<string, Array<CollectionEntry<'tabs'>>>
+  >((map, tab) => {
+    map.set(tab.data.artist, [...(map.get(tab.data.artist) ?? []), tab])
+    return map
+  }, new Map())
+
+  // [
+  //   {
+  //     artist: {
+  //       name: 'Foo'
+  //       imageURL: '...'
+  //     }
+  //     tabs: [tab, tab, ...]
+  //   },
+  //   {
+  //     artist: {
+  //       name: 'Bar'
+  //       imageURL: '...'
+  //     }
+  //     tabs: [tab, tab, ...]
+  //   }
+  // ]
+  return [...tabsByArtistMap.entries()].map(([artist, tabs]) => ({
+    artist: {
+      name: tabs[0].data.artist,
+      imageURL: tabs[0].data.artistImageURL,
+    },
+    tabs,
+  }))
+}
+
 const tabs = await getCollection('tabs')
+const tabGroups = toTabGroups(tabs)
 ---
 
 <Layout title="Tino's Tabs">
   <div class="text-stone-500">Hello there!</div>
+  {/* TODO sort alphatically */}
   <ul>
     {
-      tabs.map((tab) => (
-        <li class="flex gap-2 items-center">
-					<Image src={tab.data.albumImageURL} alt="Album Cover" class="h-5 w-5 object-cover" />
-          <a href={`/${tab.slug}`}>{tab.data.title}</a>
+      tabGroups.map((group) => (
+        <li>
+          <div class="flex gap-2">
+            <div>{group.artist.name}</div>
+            <Image
+              src={group.artist.imageURL}
+              alt="Artist Avatar"
+              class="h-5 w-5 object-cover rounded-full"
+            />
+          </div>
+          {/* TODO sort alphatically */}
+          <ul>
+            {group.tabs.map((tab) => (
+              <li class="flex gap-2 items-center">
+                <Image
+                  src={tab.data.albumImageURL}
+                  alt="Album Cover"
+                  class="h-5 w-5 object-cover"
+                />
+                <a href={`/${tab.slug}`}>{tab.data.title}</a>
+              </li>
+            ))}
+          </ul>
         </li>
       ))
     }
