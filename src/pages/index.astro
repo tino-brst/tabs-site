@@ -29,13 +29,21 @@ function toTabGroups(tabs: Array<CollectionEntry<'tabs'>>) {
   //     tabs: [tab, tab, ...]
   //   }
   // ]
-  return [...tabsByArtistMap.entries()].map(([artist, tabs]) => ({
+  const tabGroups = [...tabsByArtistMap.entries()].map(([_, tabs]) => ({
     artist: {
       name: tabs[0].data.artist,
       imageURL: tabs[0].data.artistImageURL,
     },
     tabs,
   }))
+
+  // Sort groups by artist, and their tabs by title
+  return tabGroups
+    .map((group) => ({
+      ...group,
+      tabs: group.tabs.sort((a, b) => a.data.title.localeCompare(b.data.title)),
+    }))
+    .sort((a, b) => a.artist.name.localeCompare(b.artist.name))
 }
 
 const tabs = await getCollection('tabs')
@@ -44,8 +52,7 @@ const tabGroups = toTabGroups(tabs)
 
 <Layout title="Tino's Tabs">
   <div class="text-stone-500">Hello there!</div>
-  {/* TODO sort alphatically */}
-  <ul>
+  <ol>
     {
       tabGroups.map((group) => (
         <li>
@@ -57,8 +64,7 @@ const tabGroups = toTabGroups(tabs)
               class="h-5 w-5 object-cover rounded-full"
             />
           </div>
-          {/* TODO sort alphatically */}
-          <ul>
+          <ol>
             {group.tabs.map((tab) => (
               <li class="flex gap-2 items-center">
                 <Image
@@ -69,9 +75,9 @@ const tabGroups = toTabGroups(tabs)
                 <a href={`/${tab.slug}`}>{tab.data.title}</a>
               </li>
             ))}
-          </ul>
+          </ol>
         </li>
       ))
     }
-  </ul>
+  </ol>
 </Layout>
