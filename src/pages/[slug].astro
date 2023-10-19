@@ -21,7 +21,30 @@ const { Content } = await tab.render()
 ---
 
 <Layout title={`${data.title} - Tino's Tabs`}>
-  <div class="text-stone-500">Tab!</div>
-  <Image src={data.albumImageURL} alt="Album Cover" />
-  <Content />
+  <div class="flex flex-col items-center gap-4">
+    <div
+      class="relative shadow-2xl rounded-md after:content-[''] after:rounded-md after:absolute after:inset-0 after:ring-1 after:ring-inset after:ring-black/10"
+    >
+      <Image
+        src={data.albumImageURL}
+        alt="Album Cover"
+        class="w-44 h-4w-44 rounded-md"
+      />
+    </div>
+    <div class="flex flex-col items-center">
+      <h1 class="font-semibold text-2xl">{data.title}</h1>
+      <h2 class="text-stone-500">{`${data.album} • ${data.artist}`}</h2>
+    </div>
+    <div
+      class="bg-stone-50 flex self-stretch divide-x p-1.5 rounded-md text-sm"
+    >
+      <div class="flex-1 text-center text-stone-500">
+        Tuning <span class="text-stone-900 font-medium">Standard</span>
+      </div>
+      <div class="flex-1 text-center text-stone-500">
+        Capo <span class="text-stone-900 font-medium">4th fret</span>
+      </div>
+    </div>
+  </div>
+  <!-- <Content /> -->
 </Layout>
