@@ -51,6 +51,11 @@ const tabGroups = toTabGroups(tabs)
 ---
 
 <Layout title="Tino's Tabs">
+  <h1 class="font-semibold text-3xl mb-4">Tino's Tabs</h1>
+  <p class="text-stone-400 mb-8 max-w-md">
+    A collection of tabs I’ve put together throughout the years, with video
+    references, lyrics, and other useful stuff. Hope they help!
+  </p>
   <ol class="flex flex-col gap-4">
     {
       tabGroups.map((group) => (
@@ -64,6 +69,7 @@ const tabGroups = toTabGroups(tabs)
                 }`}
               </div>
             </div>
+            {/* TODO share roundedness? Check using CSS Vars in tailwind */}
             <div class="relative after:content-[''] after:rounded-full after:absolute after:inset-0 after:ring-1 after:ring-inset after:ring-black/10">
               <Image
                 src={group.artist.imageURL}
