@@ -20,11 +20,17 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>
 const tab = Astro.props as Props
 const data = tab.data
 const { Content } = await tab.render()
+
+function formatNumberWithOrdinalSuffix(value: number): string {
+  const suffix = ['th', 'st', 'nd', 'rd']
+  const units = value % 100
+  return value + (suffix[(units - 20) % 10] ?? suffix[units] ?? suffix[0])
+}
 ---
 
 <Layout title={`${data.title} - Tino's Tabs`}>
   {/* TODO a way to get to the index/home page */}
-  <div class="flex flex-col items-center gap-4">
+  <div class="flex flex-col items-center gap-4 mb-8">
     <div
       class="relative shadow-2xl rounded-md after:content-[''] after:rounded-md after:absolute after:inset-0 after:ring-1 after:ring-inset after:ring-black/10"
     >
@@ -38,15 +44,20 @@ const { Content } = await tab.render()
       <h1 class="font-semibold text-2xl">{data.title}</h1>
       <h2 class="text-stone-500">{`${data.album} • ${data.artist}`}</h2>
     </div>
-    {/* TODO add to frontmatter */}
     <div
       class="bg-stone-50 flex self-stretch divide-x p-1.5 rounded-md text-sm"
     >
       <div class="flex-1 text-center text-stone-500">
-        Tuning <span class="text-stone-900 font-medium">Standard</span>
+        Tuning <span class="text-stone-900 font-medium">{data.tuning}</span>
       </div>
       <div class="flex-1 text-center text-stone-500">
-        Capo <span class="text-stone-900 font-medium">4th fret</span>
+        Capo <span class="text-stone-900 font-medium"
+          >{
+            data.capo
+              ? `${formatNumberWithOrdinalSuffix(data.capo)} fret`
+              : 'None'
+          }</span
+        >
       </div>
     </div>
     {/* TODO use actual links, add to frontmatter */}

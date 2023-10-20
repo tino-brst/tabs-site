@@ -6,6 +6,8 @@ const tabs = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
+      tuning: z.string(),
+      capo: z.number().positive().optional(),
       album: z.string(),
       artist: z.string(),
       albumImageURL: image(),
