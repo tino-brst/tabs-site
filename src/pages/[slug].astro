@@ -102,10 +102,52 @@ function formatNumberWithOrdinalSuffix(value: number): string {
     class="flex gap-4 mx-[calc(-50vw+50%)] px-[calc(50vw-50%)] py-5 -my-5 overflow-x-auto"
   >
     {
-      [...new Array(4)].map((item) => (
-        <div class="max-w-md bg-stone-50 rounded-xl relative flex-shrink-0 w-4/5 aspect-video shadow-lg after:content-[''] after:rounded-xl after:absolute after:inset-0 after:ring-1 after:ring-inset after:ring-black/10 after:pointer-events-none" />
+      [...new Array(1)].map((item) => (
+        <div class="max-w-[75%] bg-stone-50 rounded-xl relative shrink-0 basis-[75%] aspect-video shadow-lg after:content-[''] after:rounded-xl after:absolute after:inset-0 after:ring-1 after:ring-inset after:ring-black/10 after:pointer-events-none">
+          <iframe
+            class="rounded-xl w-full aspect-video"
+            src="https://www.youtube.com/embed/eZHBH1MoT3g"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          />
+        </div>
       ))
     }
+    <a
+      href={`https://www.youtube.com/results?search_query=${(
+        data.title +
+        ' ' +
+        data.artist
+      ).replace(' ', '+')}`}
+      target="_blank"
+      class="cursor-pointer max-w-[75%] rounded-xl flex-col gap-2 shrink-0 basis-[75%] aspect-video border border-stone-300 flex-1 p-4 text-stone-500 font-medium shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] flex items-center justify-center active:translate-y-[1px] active:shadow-none transition-all active:bg-stone-50 hover:bg-stone-50"
+    >
+      Search on YouTube
+      <span
+        class="bg-stone-100 rounded-full px-2 py-1 text-sm max-w-full flex items-center gap-1"
+      >
+        <svg
+          class="text-stone-400 shrink-0"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21 21L15.0001 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+          </path>
+        </svg>
+        <span class="truncate">
+          {`${data.title} ${data.artist}`}
+        </span>
+      </span>
+    </a>
   </div>
   <!-- <Content /> -->
 </Layout>
