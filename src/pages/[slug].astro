@@ -96,5 +96,16 @@ function formatNumberWithOrdinalSuffix(value: number): string {
       </a>
     </div>
   </div>
+
+  <h2 class="font-semibold text-lg my-4">Useful Videos</h2>
+  <div
+    class="flex gap-4 mx-[calc(-50vw+50%)] px-[calc(50vw-50%)] py-5 -my-5 overflow-x-auto"
+  >
+    {
+      [...new Array(4)].map((item) => (
+        <div class="max-w-md bg-stone-50 rounded-xl relative flex-shrink-0 w-4/5 aspect-video shadow-lg after:content-[''] after:rounded-xl after:absolute after:inset-0 after:ring-1 after:ring-inset after:ring-black/10 after:pointer-events-none" />
+      ))
+    }
+  </div>
   <!-- <Content /> -->
 </Layout>
