@@ -43,7 +43,7 @@ function formatNumberWithOrdinalSuffix(value: number): string {
     </div>
     <div class="flex flex-col items-center">
       <h1 class="text-2xl font-semibold">{data.title}</h1>
-      <h2 class="text-stone-500">{`${data.album} • ${data.artist}`}</h2>
+      <div class="text-stone-500">{`${data.album} • ${data.artist}`}</div>
     </div>
     <div
       class="flex divide-x self-stretch rounded-md bg-stone-50 p-1.5 text-sm"
@@ -100,7 +100,7 @@ function formatNumberWithOrdinalSuffix(value: number): string {
   {
     data.videoIDs && data.videoIDs.length > 0 && (
       <>
-        <h2 class="my-4 text-lg font-semibold">Useful Videos</h2>
+        <h2>Useful Videos</h2>
         <UsefulVideos
           videoIDs={data.videoIDs}
           searchQuery={`${data.title} ${data.artist}`}
@@ -109,5 +109,25 @@ function formatNumberWithOrdinalSuffix(value: number): string {
     )
   }
 
-  <!-- <Content /> -->
+  <Content />
+  {/* TODO feedback */}
 </Layout>
+
+<style>
+  :global(h2) {
+    @apply mb-4 mt-6 text-lg font-semibold;
+  }
+
+  :global(p) {
+    @apply my-4;
+  }
+
+  :global(pre) {
+    @apply -mx-5 my-4 overflow-auto border-y border-stone-100 bg-stone-50 px-5 py-4 text-sm text-stone-600;
+    @apply md:mx-0 md:rounded-lg md:border;
+  }
+
+  :global(:not(pre) > code) {
+    @apply rounded border border-stone-100 bg-stone-50 px-1 text-sm text-stone-600;
+  }
+</style>
