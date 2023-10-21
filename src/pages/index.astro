@@ -72,7 +72,7 @@ const tabGroups = toTabGroups(tabs)
             <div class="relative after:absolute after:inset-0 after:rounded-full after:ring-1 after:ring-inset after:ring-black/10 after:content-['']">
               <Image
                 src={group.artist.imageURL}
-                alt="Artist Avatar"
+                alt={`${group.artist.name} Profile Image`}
                 class="h-12 w-12 rounded-full object-cover"
               />
             </div>
@@ -87,7 +87,7 @@ const tabGroups = toTabGroups(tabs)
                   <div class="relative after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:transition-colors after:content-[''] group-hover:after:bg-black/5">
                     <Image
                       src={tab.data.albumImageURL}
-                      alt="Album Cover"
+                      alt={`${tab.data.album} Album Cover`}
                       class="h-10 w-10 rounded object-cover"
                     />
                   </div>

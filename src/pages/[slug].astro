@@ -54,10 +54,9 @@ function formatNumberWithOrdinalSuffix(value: number): string {
     <div
       class="relative rounded-md shadow-2xl after:absolute after:inset-0 after:rounded-md after:ring-1 after:ring-inset after:ring-black/10 after:content-['']"
     >
-      {/* TODO update alt with data */}
       <Image
         src={data.albumImageURL}
-        alt="Album Cover"
+        alt={`${data.album} Album Cover`}
         class="h-4w-44 w-44 rounded-md"
       />
     </div>
@@ -69,7 +68,8 @@ function formatNumberWithOrdinalSuffix(value: number): string {
       class="flex divide-x self-stretch rounded-lg bg-stone-50 p-1.5 text-sm"
     >
       <div class="flex-1 text-center text-stone-500">
-        Tuning <span class="font-medium text-stone-900">{data.tuning}</span>
+        {/* TODO show frecuency */}
+         Tuning <span class="font-medium text-stone-900">{data.tuning}</span>
       </div>
       <div class="flex-1 text-center text-stone-500">
         Capo <span class="font-medium text-stone-900"
