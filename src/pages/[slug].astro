@@ -35,6 +35,7 @@ function formatNumberWithOrdinalSuffix(value: number): string {
     <div
       class="relative rounded-md shadow-2xl after:absolute after:inset-0 after:rounded-md after:ring-1 after:ring-inset after:ring-black/10 after:content-['']"
     >
+      {/* TODO update alt with data */}
       <Image
         src={data.albumImageURL}
         alt="Album Cover"
@@ -46,7 +47,7 @@ function formatNumberWithOrdinalSuffix(value: number): string {
       <div class="text-stone-500">{`${data.album} • ${data.artist}`}</div>
     </div>
     <div
-      class="flex divide-x self-stretch rounded-md bg-stone-50 p-1.5 text-sm"
+      class="flex divide-x self-stretch rounded-lg bg-stone-50 p-1.5 text-sm"
     >
       <div class="flex-1 text-center text-stone-500">
         Tuning <span class="font-medium text-stone-900">{data.tuning}</span>

@@ -56,14 +56,14 @@ const tabGroups = toTabGroups(tabs)
     A collection of tabs I’ve put together throughout the years, with video
     references, lyrics, and other useful stuff. Hope they help!
   </p>
-  <ol class="flex flex-col gap-4">
+  <ol class="flex flex-col gap-6">
     {
       tabGroups.map((group) => (
-        <li class="flex flex-col gap-3 rounded-xl bg-stone-50 p-3">
+        <li class="flex flex-col gap-3 rounded-2xl bg-stone-50 p-4 pb-0">
           <div class="flex items-center justify-between gap-2">
             <div class="flex flex-col">
               <div class="text-2xl font-semibold">{group.artist.name}</div>
-              <div class="text-sm font-medium text-stone-400">
+              <div class="text-sm text-stone-400">
                 {`${group.tabs.length} ${
                   group.tabs.length === 1 ? 'tab' : 'tabs'
                 }`}
@@ -78,12 +78,14 @@ const tabGroups = toTabGroups(tabs)
               />
             </div>
           </div>
-          <ol class="flex flex-col gap-3">
-            {/* TODO hover states and stuff */}
+          <ol class="-mx-4 flex flex-col px-2 pb-2">
             {group.tabs.map((tab) => (
               <li>
-                <a href={`/${tab.slug}`} class="flex items-center gap-2">
-                  <div class="relative after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:content-['']">
+                <a
+                  href={`/${tab.slug}`}
+                  class="group flex items-center gap-3 rounded-lg p-2 transition-colors hover:bg-stone-100"
+                >
+                  <div class="relative after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:transition-colors after:content-[''] group-hover:after:bg-black/5">
                     <Image
                       src={tab.data.albumImageURL}
                       alt="Album Cover"
@@ -92,7 +94,7 @@ const tabGroups = toTabGroups(tabs)
                   </div>
                   <div class="flex flex-col">
                     <div class="leading-snug">{tab.data.title}</div>
-                    <div class="text-sm leading-snug text-stone-400">
+                    <div class="text-sm leading-snug text-stone-500">
                       {tab.data.album}
                     </div>
                   </div>
