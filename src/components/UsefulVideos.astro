@@ -5,6 +5,9 @@ type Props = {
 }
 
 const { videoIDs: urls, searchQuery } = Astro.props
+
+// TODO add start-at support (e.g. Sanar has a full show, and should start at a certain time where the song is played)
+// Should probably switch back to using the full YouTube embed links instead of the IDs
 ---
 
 {
