@@ -97,12 +97,17 @@ function formatNumberWithOrdinalSuffix(value: number): string {
     </div>
   </div>
 
-  {/* TODO render conditionally */}
-  <h2 class="my-4 text-lg font-semibold">Useful Videos</h2>
-  <UsefulVideos
-    urls={['https://www.youtube.com/embed/eZHBH1MoT3g']}
-    searchQuery={`${data.title} ${data.artist}`}
-  />
+  {
+    data.videoIDs && data.videoIDs.length > 0 && (
+      <>
+        <h2 class="my-4 text-lg font-semibold">Useful Videos</h2>
+        <UsefulVideos
+          videoIDs={data.videoIDs}
+          searchQuery={`${data.title} ${data.artist}`}
+        />
+      </>
+    )
+  }
 
   <!-- <Content /> -->
 </Layout>

@@ -14,6 +14,7 @@ const tabs = defineCollection({
       artistImageURL: image(),
       spotifyURL: z.string().url(),
       appleMusicURL: z.string().url(),
+      videoIDs: z.string().array().optional(),
     }),
 })
 
