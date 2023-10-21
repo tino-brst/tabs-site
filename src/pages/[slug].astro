@@ -30,8 +30,27 @@ function formatNumberWithOrdinalSuffix(value: number): string {
 ---
 
 <Layout title={`${data.title} - Tino's Tabs`}>
-  {/* TODO a way to get to the index/home page */}
-  <div class="mb-8 flex flex-col items-center gap-4">
+  <a
+    href="/"
+    class="-ml-2 -mt-5 flex items-center gap-0.5 justify-self-start font-medium text-stone-500 transition-colors hover:text-stone-600"
+  >
+    <svg
+      width="22"
+      height="22"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15 18L9 12L15 6"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+    </svg>
+     All Tabs
+  </a>
+  <div class="mb-8 mt-6 flex flex-col items-center gap-4">
     <div
       class="relative rounded-md shadow-2xl after:absolute after:inset-0 after:rounded-md after:ring-1 after:ring-inset after:ring-black/10 after:content-['']"
     >
