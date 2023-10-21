@@ -30,28 +30,28 @@ function formatNumberWithOrdinalSuffix(value: number): string {
 
 <Layout title={`${data.title} - Tino's Tabs`}>
   {/* TODO a way to get to the index/home page */}
-  <div class="flex flex-col items-center gap-4 mb-8">
+  <div class="mb-8 flex flex-col items-center gap-4">
     <div
-      class="relative shadow-2xl rounded-md after:content-[''] after:rounded-md after:absolute after:inset-0 after:ring-1 after:ring-inset after:ring-black/10"
+      class="relative rounded-md shadow-2xl after:absolute after:inset-0 after:rounded-md after:ring-1 after:ring-inset after:ring-black/10 after:content-['']"
     >
       <Image
         src={data.albumImageURL}
         alt="Album Cover"
-        class="w-44 h-4w-44 rounded-md"
+        class="h-4w-44 w-44 rounded-md"
       />
     </div>
     <div class="flex flex-col items-center">
-      <h1 class="font-semibold text-2xl">{data.title}</h1>
+      <h1 class="text-2xl font-semibold">{data.title}</h1>
       <h2 class="text-stone-500">{`${data.album} • ${data.artist}`}</h2>
     </div>
     <div
-      class="bg-stone-50 flex self-stretch divide-x p-1.5 rounded-md text-sm"
+      class="flex divide-x self-stretch rounded-md bg-stone-50 p-1.5 text-sm"
     >
       <div class="flex-1 text-center text-stone-500">
-        Tuning <span class="text-stone-900 font-medium">{data.tuning}</span>
+        Tuning <span class="font-medium text-stone-900">{data.tuning}</span>
       </div>
       <div class="flex-1 text-center text-stone-500">
-        Capo <span class="text-stone-900 font-medium"
+        Capo <span class="font-medium text-stone-900"
           >{
             data.capo
               ? `${formatNumberWithOrdinalSuffix(data.capo)} fret`
@@ -60,52 +60,51 @@ function formatNumberWithOrdinalSuffix(value: number): string {
         >
       </div>
     </div>
-    {/* TODO use actual links, add to frontmatter */}
     <div class="flex gap-3 self-stretch">
       <a
         href={data.spotifyURL}
         target="_blank"
-        class="text-center border border-stone-300 rounded-full flex-1 px-2 py-1 text-stone-500 font-medium shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] flex items-center gap-2 justify-center active:translate-y-[1px] active:shadow-none transition-all active:bg-stone-50 hover:bg-stone-50"
+        class="flex flex-1 items-center justify-center gap-2 rounded-full border border-stone-300 px-2 py-1 text-center font-medium text-stone-500 shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] transition-all hover:bg-stone-50 active:translate-y-[1px] active:bg-stone-50 active:shadow-none"
       >
         <span>
           Play on <span class="hidden sm:inline">Spotify</span>
         </span>
         <span
-          class="relative rounded after:content-[''] after:rounded after:absolute after:inset-0 after:ring-1 after:ring-inset after:ring-black/10"
+          class="relative rounded after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:content-['']"
         >
-          <Image src={spotifyIconImage} alt="Spotify" class="w-5 h-5 rounded" />
+          <Image src={spotifyIconImage} alt="Spotify" class="h-5 w-5 rounded" />
         </span>
       </a>
       <a
         href={data.appleMusicURL}
         target="_blank"
-        class="text-center border border-stone-300 rounded-full flex-1 px-2 py-1 text-stone-500 font-medium shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] flex items-center gap-2 justify-center active:translate-y-[1px] active:shadow-none transition-all active:bg-stone-50 hover:bg-stone-50"
+        class="flex flex-1 items-center justify-center gap-2 rounded-full border border-stone-300 px-2 py-1 text-center font-medium text-stone-500 shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] transition-all hover:bg-stone-50 active:translate-y-[1px] active:bg-stone-50 active:shadow-none"
       >
         <span>
           Play on <span class="hidden sm:inline">Apple Music</span>
         </span>
         <span
-          class="relative rounded after:content-[''] after:rounded after:absolute after:inset-0 after:ring-1 after:ring-inset after:ring-black/10"
+          class="relative rounded after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:content-['']"
         >
           <Image
             src={appleMusicIconImage}
             alt="Apple Music"
-            class="w-5 h-5 rounded"
+            class="h-5 w-5 rounded"
           />
         </span>
       </a>
     </div>
   </div>
 
-  <h2 class="font-semibold text-lg my-4">Useful Videos</h2>
+  <h2 class="my-4 text-lg font-semibold">Useful Videos</h2>
   <div
-    class="flex gap-4 mx-[calc(-50vw+50%)] px-[calc(50vw-50%)] py-5 -my-5 overflow-x-auto"
+    class="-my-5 mx-[calc(-50vw+50%)] flex gap-4 overflow-x-auto px-[calc(50vw-50%)] py-5"
   >
     {
       [...new Array(1)].map((item) => (
-        <div class="max-w-[75%] bg-stone-50 rounded-xl relative shrink-0 basis-[75%] aspect-video shadow-lg after:content-[''] after:rounded-xl after:absolute after:inset-0 after:ring-1 after:ring-inset after:ring-black/10 after:pointer-events-none">
+        <div class="relative aspect-video max-w-[75%] shrink-0 basis-[75%] rounded-xl bg-stone-50 shadow-lg after:pointer-events-none after:absolute after:inset-0 after:rounded-xl after:ring-1 after:ring-inset after:ring-black/10 after:content-['']">
           <iframe
-            class="rounded-xl w-full aspect-video"
+            class="aspect-video w-full rounded-xl"
             src="https://www.youtube.com/embed/eZHBH1MoT3g"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
@@ -120,14 +119,14 @@ function formatNumberWithOrdinalSuffix(value: number): string {
         data.artist
       ).replace(' ', '+')}`}
       target="_blank"
-      class="cursor-pointer max-w-[75%] rounded-xl flex-col gap-2 shrink-0 basis-[75%] aspect-video border border-stone-300 flex-1 p-4 text-stone-500 font-medium shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] flex items-center justify-center active:translate-y-[1px] active:shadow-none transition-all active:bg-stone-50 hover:bg-stone-50"
+      class="flex aspect-video max-w-[75%] flex-1 shrink-0 basis-[75%] cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-stone-300 p-4 font-medium text-stone-500 shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] transition-all hover:bg-stone-50 active:translate-y-[1px] active:bg-stone-50 active:shadow-none"
     >
       Search on YouTube
       <span
-        class="bg-stone-100 rounded-full px-2 py-1 text-sm max-w-full flex items-center gap-1"
+        class="flex max-w-full items-center gap-1 rounded-full bg-stone-100 px-2 py-1 text-sm"
       >
         <svg
-          class="text-stone-400 shrink-0"
+          class="shrink-0 text-stone-400"
           width="16"
           height="16"
           viewBox="0 0 24 24"
