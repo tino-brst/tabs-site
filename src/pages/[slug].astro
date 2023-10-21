@@ -5,6 +5,7 @@ import Layout from '../layouts/Layout.astro'
 import { Image } from 'astro:assets'
 import appleMusicIconImage from '../assets/images/icons/apple-music.webp'
 import spotifyIconImage from '../assets/images/icons/spotify.webp'
+import UsefulVideos from '../components/UsefulVideos.astro'
 
 export const getStaticPaths = (async () => {
   const tabs = await getCollection('tabs')
@@ -96,57 +97,12 @@ function formatNumberWithOrdinalSuffix(value: number): string {
     </div>
   </div>
 
+  {/* TODO render conditionally */}
   <h2 class="my-4 text-lg font-semibold">Useful Videos</h2>
-  <div
-    class="-my-5 mx-[calc(-50vw+50%)] flex gap-4 overflow-x-auto px-[calc(50vw-50%)] py-5"
-  >
-    {
-      [...new Array(1)].map((item) => (
-        <div class="relative aspect-video max-w-[75%] shrink-0 basis-[75%] rounded-xl bg-stone-50 shadow-lg after:pointer-events-none after:absolute after:inset-0 after:rounded-xl after:ring-1 after:ring-inset after:ring-black/10 after:content-['']">
-          <iframe
-            class="aspect-video w-full rounded-xl"
-            src="https://www.youtube.com/embed/eZHBH1MoT3g"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          />
-        </div>
-      ))
-    }
-    <a
-      href={`https://www.youtube.com/results?search_query=${(
-        data.title +
-        ' ' +
-        data.artist
-      ).replace(' ', '+')}`}
-      target="_blank"
-      class="flex aspect-video max-w-[75%] flex-1 shrink-0 basis-[75%] cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-stone-300 p-4 font-medium text-stone-500 shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] transition-all hover:bg-stone-50 active:translate-y-[1px] active:bg-stone-50 active:shadow-none"
-    >
-      Search on YouTube
-      <span
-        class="flex max-w-full items-center gap-1 rounded-full bg-stone-100 px-2 py-1 text-sm"
-      >
-        <svg
-          class="shrink-0 text-stone-400"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M21 21L15.0001 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-          </path>
-        </svg>
-        <span class="truncate">
-          {`${data.title} ${data.artist}`}
-        </span>
-      </span>
-    </a>
-  </div>
+  <UsefulVideos
+    urls={['https://www.youtube.com/embed/eZHBH1MoT3g']}
+    searchQuery={`${data.title} ${data.artist}`}
+  />
+
   <!-- <Content /> -->
 </Layout>
