@@ -72,11 +72,13 @@ const tabGroups = toTabGroups(tabs)
               </div>
             </div>
             <div class="relative h-12 w-12 rounded-full bg-stone-100 after:absolute after:inset-0 after:rounded-full after:ring-1 after:ring-inset after:ring-black/10 after:content-['']">
-              <Image
-                src={group.artist.imageURL}
-                alt={`${group.artist.name} Profile Image`}
-                class="h-12 w-12 rounded-full object-cover"
-              />
+              {group.artist.imageURL && (
+                <Image
+                  src={group.artist.imageURL}
+                  alt={`${group.artist.name} Profile Image`}
+                  class="h-12 w-12 rounded-full object-cover"
+                />
+              )}
             </div>
           </div>
           <ol class="-mx-4 flex flex-col px-2 pb-2">
@@ -87,11 +89,13 @@ const tabGroups = toTabGroups(tabs)
                   class="group flex items-center gap-3 rounded-lg p-2 transition-colors hover:bg-stone-100"
                 >
                   <div class="relative h-10 w-10 rounded bg-stone-100 after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:transition-colors after:content-[''] group-hover:after:bg-black/5">
-                    <Image
-                      src={tab.data.albumImageURL}
-                      alt={`${tab.data.album} Album Cover`}
-                      class="h-10 w-10 rounded object-cover"
-                    />
+                    {tab.data.albumImageURL && (
+                      <Image
+                        src={tab.data.albumImageURL}
+                        alt={`${tab.data.album} Album Cover`}
+                        class="h-10 w-10 rounded object-cover"
+                      />
+                    )}
                   </div>
                   <div class="flex flex-col">
                     <div class="leading-snug">{tab.data.title}</div>

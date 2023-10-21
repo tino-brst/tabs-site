@@ -52,11 +52,15 @@ function formatNumberWithOrdinalSuffix(value: number): string {
     <div
       class="relative h-44 w-44 rounded-md bg-stone-50 shadow-2xl after:absolute after:inset-0 after:rounded-md after:ring-1 after:ring-inset after:ring-black/10 after:content-['']"
     >
-      <Image
-        src={data.albumImageURL}
-        alt={`${data.album} Album Cover`}
-        class="h-44 w-44 rounded-md"
-      />
+      {
+        data.albumImageURL && (
+          <Image
+            src={data.albumImageURL}
+            alt={`${data.album} Album Cover`}
+            class="h-44 w-44 rounded-md"
+          />
+        )
+      }
     </div>
     <div class="flex flex-col items-center">
       <h1 class="text-2xl font-semibold">{data.title}</h1>
@@ -81,9 +85,10 @@ function formatNumberWithOrdinalSuffix(value: number): string {
     </div>
     <div class="flex gap-3 self-stretch">
       <a
+        data-disabled={!data.spotifyURL}
         href={data.spotifyURL}
         target="_blank"
-        class="flex flex-1 items-center justify-center gap-2 rounded-full border border-stone-300 px-2 py-1 text-center font-medium text-stone-500 shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] transition-all hover:bg-stone-50 active:translate-y-[1px] active:bg-stone-50 active:shadow-none"
+        class="flex flex-1 items-center justify-center gap-2 rounded-full border border-stone-300 px-2 py-1 text-center font-medium text-stone-500 shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] transition-all hover:bg-stone-50 active:translate-y-[1px] active:bg-stone-50 active:shadow-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
       >
         <span>
           Play on <span class="hidden sm:inline">Spotify</span>
@@ -99,9 +104,10 @@ function formatNumberWithOrdinalSuffix(value: number): string {
         </span>
       </a>
       <a
+        data-disabled={!data.appleMusicURL}
         href={data.appleMusicURL}
         target="_blank"
-        class="flex flex-1 items-center justify-center gap-2 rounded-full border border-stone-300 px-2 py-1 text-center font-medium text-stone-500 shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] transition-all hover:bg-stone-50 active:translate-y-[1px] active:bg-stone-50 active:shadow-none"
+        class="flex flex-1 items-center justify-center gap-2 rounded-full border border-stone-300 px-2 py-1 text-center font-medium text-stone-500 shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] transition-all hover:bg-stone-50 active:translate-y-[1px] active:bg-stone-50 active:shadow-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
       >
         <span>
           Play on <span class="hidden sm:inline">Apple Music</span>
