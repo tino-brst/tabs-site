@@ -62,7 +62,9 @@ const tabGroups = toTabGroups(tabs)
         <li class="flex flex-col gap-3 rounded-2xl bg-stone-50 p-4 pb-0">
           <div class="flex items-center justify-between gap-2">
             <div class="flex flex-col">
-              <div class="text-2xl font-semibold">{group.artist.name}</div>
+              <div class="text-2xl font-semibold leading-tight">
+                {group.artist.name}
+              </div>
               <div class="text-sm text-stone-500">
                 {`${group.tabs.length} ${
                   group.tabs.length === 1 ? 'tab' : 'tabs'
