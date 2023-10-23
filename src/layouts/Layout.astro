@@ -1,6 +1,8 @@
 ---
 import '@fontsource-variable/inter'
+import { twMerge } from 'tailwind-merge'
 
+// TODO switch to type
 interface Props {
   title: string
 }
@@ -19,7 +21,12 @@ const { title } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="mx-auto max-w-screen-md px-5 py-10 text-stone-800">
+  <body
+    class={twMerge(
+      'mx-auto max-w-screen-md px-5 py-10 text-stone-800',
+      'dark:bg-black dark:text-stone-100',
+    )}
+  >
     <slot />
   </body>
 </html>
