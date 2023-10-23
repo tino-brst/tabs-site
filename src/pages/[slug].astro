@@ -34,6 +34,7 @@ function formatNumberWithOrdinalSuffix(value: number): string {
     class={twMerge(
       '-ml-2 -mt-5 flex w-fit items-center gap-0.5 justify-self-start font-medium text-stone-500 transition-colors',
       'hover:text-stone-700',
+      'dark:text-stone-400 dark:hover:text-stone-300',
     )}
   >
     <svg
@@ -57,6 +58,7 @@ function formatNumberWithOrdinalSuffix(value: number): string {
       class={twMerge(
         'relative h-44 w-44 rounded-md bg-stone-50 shadow-2xl',
         "after:absolute after:inset-0 after:rounded-md after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
+        'dark:bg-stone-900 dark:after:ring-white/10',
       )}
     >
       {
@@ -71,17 +73,36 @@ function formatNumberWithOrdinalSuffix(value: number): string {
     </div>
     <div class="flex flex-col items-center">
       <h1 class="text-2xl font-semibold">{data.title}</h1>
-      <div class="text-stone-500">{`${data.album} • ${data.artist}`}</div>
+      <div class={twMerge('text-stone-500', 'dark:text-stone-400')}>
+        {`${data.album} • ${data.artist}`}
+      </div>
     </div>
     <div
-      class="flex divide-x self-stretch rounded-lg bg-stone-50 p-1.5 text-sm"
+      class={twMerge(
+        'flex divide-x self-stretch rounded-lg bg-stone-50 p-1.5 text-sm divide-stone-200',
+        'dark:bg-stone-900 dark:divide-stone-700',
+      )}
     >
-      <div class="flex-1 text-center text-stone-500">
+      <div
+        class={twMerge(
+          'flex-1 text-center text-stone-500',
+          'dark:text-stone-400',
+        )}
+      >
         {/* TODO show frecuency */}
-         Tuning <span class="font-medium text-stone-900">{data.tuning}</span>
+         Tuning <span
+          class={twMerge('font-medium text-stone-900', 'dark:text-stone-200')}
+          >{data.tuning}</span
+        >
       </div>
-      <div class="flex-1 text-center text-stone-500">
-        Capo <span class="font-medium text-stone-900"
+      <div
+        class={twMerge(
+          'flex-1 text-center text-stone-500',
+          'dark:text-stone-400',
+        )}
+      >
+        Capo <span
+          class={twMerge('font-medium text-stone-900', 'dark:text-stone-200')}
           >{
             data.capo
               ? `${formatNumberWithOrdinalSuffix(data.capo)} fret`
@@ -100,6 +121,7 @@ function formatNumberWithOrdinalSuffix(value: number): string {
           'hover:bg-stone-50',
           'active:translate-y-[1px] active:bg-stone-50 active:shadow-none',
           'data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+          'dark:border-stone-600 dark:shadow-[0_1px_0_theme(colors.stone.600)] dark:bg-stone-900 dark:text-stone-300 dark:hover:bg-stone-800 dark:active:bg-stone-800',
         )}
       >
         <span>
@@ -109,6 +131,7 @@ function formatNumberWithOrdinalSuffix(value: number): string {
           class={twMerge(
             'relative rounded',
             "after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
+            'dark:after:ring-white/20',
           )}
         >
           <img
@@ -127,6 +150,7 @@ function formatNumberWithOrdinalSuffix(value: number): string {
           'hover:bg-stone-50',
           'active:translate-y-[1px] active:bg-stone-50 active:shadow-none',
           'data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+          'dark:border-stone-600 dark:shadow-[0_1px_0_theme(colors.stone.600)] dark:bg-stone-900 dark:text-stone-300 dark:hover:bg-stone-800 dark:active:bg-stone-800',
         )}
       >
         <span>
@@ -136,6 +160,7 @@ function formatNumberWithOrdinalSuffix(value: number): string {
           class={twMerge(
             'relative rounded',
             "after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
+            'dark:after:ring-white/20',
           )}
         >
           <img
@@ -171,14 +196,17 @@ function formatNumberWithOrdinalSuffix(value: number): string {
 
   :global(p) {
     @apply my-4;
+    @apply dark:text-stone-300;
   }
 
   :global(pre) {
     @apply -mx-5 my-4 overflow-auto border-y border-stone-100 bg-stone-50 px-5 py-4 text-sm text-stone-600;
     @apply md:mx-0 md:rounded-lg md:border;
+    @apply dark:border-stone-800 dark:bg-stone-900 dark:text-stone-400;
   }
 
   :global(:not(pre) > code) {
     @apply rounded border border-stone-100 bg-stone-50 px-1 text-sm text-stone-600;
+    @apply dark:border-stone-700 dark:bg-stone-800 dark:text-stone-400;
   }
 </style>
