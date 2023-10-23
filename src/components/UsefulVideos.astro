@@ -1,4 +1,6 @@
 ---
+import { twMerge } from 'tailwind-merge'
+
 type Props = {
   videoIDs: Array<string>
   searchQuery: string
@@ -25,7 +27,12 @@ const { videoIDs: urls, searchQuery } = Astro.props
   >
     {
       urls.map((id) => (
-        <div class="relative aspect-video max-w-[75%] shrink-0 basis-[75%] rounded-xl bg-stone-50 shadow-lg after:pointer-events-none after:absolute after:inset-0 after:rounded-xl after:ring-1 after:ring-inset after:ring-black/10 after:content-['']">
+        <div
+          class={twMerge(
+            'relative aspect-video max-w-[75%] shrink-0 basis-[75%] rounded-xl bg-stone-50 shadow-lg',
+            "after:pointer-events-none after:absolute after:inset-0 after:rounded-xl after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
+          )}
+        >
           <iframe
             class="aspect-video w-full rounded-xl"
             src={`https://www.youtube.com/embed/${id}`}
@@ -42,7 +49,11 @@ const { videoIDs: urls, searchQuery } = Astro.props
         '+',
       )}`}
       target="_blank"
-      class="flex aspect-video max-w-[75%] flex-1 shrink-0 basis-[75%] cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-stone-300 p-4 font-medium text-stone-500 shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] transition-all hover:bg-stone-50 active:translate-y-[1px] active:bg-stone-50 active:shadow-none"
+      class={twMerge(
+        'flex aspect-video max-w-[75%] flex-1 shrink-0 basis-[75%] cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-stone-300 p-4 font-medium text-stone-500 shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] transition-all',
+        'hover:bg-stone-50',
+        'active:translate-y-[1px] active:bg-stone-50 active:shadow-none',
+      )}
     >
       Search on YouTube
       <span

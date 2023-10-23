@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
 import { Image } from 'astro:assets'
+import { twMerge } from 'tailwind-merge'
 
 function toTabGroups(tabs: Array<CollectionEntry<'tabs'>>) {
   // 'Foo': [tab, tab, ...]
@@ -71,7 +72,12 @@ const tabGroups = toTabGroups(tabs)
                 }`}
               </div>
             </div>
-            <div class="relative h-12 w-12 rounded-full bg-stone-100 after:absolute after:inset-0 after:rounded-full after:ring-1 after:ring-inset after:ring-black/10 after:content-['']">
+            <div
+              class={twMerge(
+                'relative h-12 w-12 rounded-full bg-stone-100',
+                "after:absolute after:inset-0 after:rounded-full after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
+              )}
+            >
               {group.artist.imageURL && (
                 <Image
                   src={group.artist.imageURL}
@@ -86,9 +92,17 @@ const tabGroups = toTabGroups(tabs)
               <li>
                 <a
                   href={`/${tab.slug}`}
-                  class="group flex items-center gap-3 rounded-lg p-2 transition-colors hover:bg-stone-100"
+                  class={twMerge(
+                    'group flex items-center gap-3 rounded-lg p-2 transition-colors',
+                    'hover:bg-stone-100',
+                  )}
                 >
-                  <div class="relative h-10 w-10 rounded bg-stone-100 after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:transition-colors after:content-[''] group-hover:after:bg-black/5">
+                  <div
+                    class={twMerge(
+                      'relative h-10 w-10 rounded bg-stone-100',
+                      "after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:transition-colors after:content-[''] group-hover:after:bg-black/5",
+                    )}
+                  >
                     {tab.data.albumImageURL && (
                       <Image
                         src={tab.data.albumImageURL}
