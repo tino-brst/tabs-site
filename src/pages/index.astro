@@ -53,20 +53,27 @@ const tabGroups = toTabGroups(tabs)
 
 <Layout title="Tino's Tabs">
   <h1 class="mb-4 text-3xl font-semibold">Tino's Tabs</h1>
-  <p class="mb-8 max-w-md text-stone-500">
+  <p class={twMerge('mb-8 max-w-md text-stone-500', 'dark:text-stone-400')}>
     A collection of tabs I’ve put together throughout the years, with video
     references, lyrics, and other useful stuff. Hope they help!
   </p>
   <ol class="flex flex-col gap-6">
     {
       tabGroups.map((group) => (
-        <li class="flex flex-col gap-3 rounded-2xl bg-stone-50 p-4 pb-0">
+        <li
+          class={twMerge(
+            'flex flex-col gap-3 rounded-2xl bg-stone-50 p-4 pb-0',
+            'dark:bg-stone-900',
+          )}
+        >
           <div class="flex items-center justify-between gap-2">
             <div class="flex flex-col">
               <div class="text-2xl font-semibold leading-tight">
                 {group.artist.name}
               </div>
-              <div class="text-sm text-stone-500">
+              <div
+                class={twMerge('text-sm text-stone-500', 'dark:text-stone-400')}
+              >
                 {`${group.tabs.length} ${
                   group.tabs.length === 1 ? 'tab' : 'tabs'
                 }`}
@@ -76,6 +83,7 @@ const tabGroups = toTabGroups(tabs)
               class={twMerge(
                 'relative h-12 w-12 rounded-full bg-stone-100',
                 "after:absolute after:inset-0 after:rounded-full after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
+                'dark:bg-stone-800 dark:after:ring-white/10',
               )}
             >
               {group.artist.imageURL && (
@@ -95,12 +103,14 @@ const tabGroups = toTabGroups(tabs)
                   class={twMerge(
                     'group flex items-center gap-3 rounded-lg p-2 transition-colors',
                     'hover:bg-stone-100',
+                    'dark:hover:bg-stone-800',
                   )}
                 >
                   <div
                     class={twMerge(
                       'relative h-10 w-10 rounded bg-stone-100',
                       "after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:transition-colors after:content-[''] group-hover:after:bg-black/5",
+                      'dark:bg-stone-800 dark:after:ring-white/10',
                     )}
                   >
                     {tab.data.albumImageURL && (
@@ -113,7 +123,12 @@ const tabGroups = toTabGroups(tabs)
                   </div>
                   <div class="flex flex-col">
                     <div class="leading-snug">{tab.data.title}</div>
-                    <div class="text-sm leading-snug text-stone-500">
+                    <div
+                      class={twMerge(
+                        'text-sm leading-snug text-stone-500',
+                        'dark:text-stone-400',
+                      )}
+                    >
                       {tab.data.album}
                     </div>
                   </div>
