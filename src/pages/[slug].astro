@@ -5,6 +5,7 @@ import Layout from '../layouts/Layout.astro'
 import { Image } from 'astro:assets'
 import UsefulVideos from '../components/UsefulVideos.astro'
 import { twMerge } from 'tailwind-merge'
+import { formatNumberWithOrdinalSuffix } from '../utils'
 
 export const getStaticPaths = (async () => {
   const tabs = await getCollection('tabs')
@@ -20,12 +21,6 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>
 const tab = Astro.props as Props
 const data = tab.data
 const { Content } = await tab.render()
-
-function formatNumberWithOrdinalSuffix(value: number): string {
-  const suffix = ['th', 'st', 'nd', 'rd']
-  const units = value % 100
-  return value + (suffix[(units - 20) % 10] ?? suffix[units] ?? suffix[0])
-}
 ---
 
 <Layout title={`${data.title} - Tino's Tabs`}>
