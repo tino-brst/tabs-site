@@ -1,4 +1,4 @@
-import type { CollectionEntry } from "astro:content"
+import type { CollectionEntry } from 'astro:content'
 
 export function toTabGroups(tabs: Array<CollectionEntry<'tabs'>>) {
   // 'Foo': [tab, tab, ...]
@@ -48,4 +48,3 @@ export function formatNumberWithOrdinalSuffix(value: number): string {
   const units = value % 100
   return value + (suffix[(units - 20) % 10] ?? suffix[units] ?? suffix[0])
 }
-
