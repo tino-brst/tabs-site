@@ -7,6 +7,10 @@ import { toTabGroups } from '../utils'
 
 const tabs = await getCollection('tabs')
 const tabGroups = toTabGroups(tabs)
+
+// TODO extract icons to components (careful with the tab album cover and its translate)
+// TODO remove invisibles
+// TODO set sizes via tailwind (instead of width/height)
 ---
 
 <Layout
@@ -42,16 +46,38 @@ const tabGroups = toTabGroups(tabs)
             </div>
             <div
               class={twMerge(
-                'relative h-12 w-12 rounded-full bg-stone-100',
+                'relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-stone-100',
                 "after:absolute after:inset-0 after:rounded-full after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
                 'dark:bg-stone-800 dark:after:ring-white/10',
               )}
             >
+              <svg
+                class={twMerge(
+                  'absolute h-11 w-11 translate-y-2 text-stone-200',
+                  'dark:text-stone-700',
+                )}
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.41812 18.3031C5.39108 15.692 8.49885 14 12 14C15.5011 14 18.6089 15.692 20.5818 18.3031C20.5907 18.3149 20.5997 18.3268 20.6087 18.3386C20.7783 18.563 20.9602 18.8035 21.0902 19.0356C21.2475 19.3165 21.3642 19.6414 21.3569 20.0366C21.3511 20.3542 21.2549 20.6516 21.138 20.8864C21.0211 21.1212 20.8419 21.3772 20.592 21.5734C20.2586 21.835 19.8957 21.9276 19.5733 21.9662C19.2905 22.0001 18.9553 22.0001 18.6183 22C18.6031 22 18.5879 22 18.5727 22H5.42721C5.41202 22 5.39683 22 5.38165 22C5.04465 22.0001 4.70946 22.0001 4.42662 21.9662C4.10423 21.9276 3.74132 21.835 3.408 21.5734C3.15805 21.3772 2.97883 21.1212 2.86195 20.8864C2.74507 20.6516 2.64883 20.3542 2.64302 20.0366C2.63579 19.6414 2.7524 19.3165 2.90974 19.0356C3.03972 18.8035 3.22162 18.563 3.39125 18.3386C3.40025 18.3268 3.4092 18.3149 3.41812 18.3031Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.49997 7.5C6.49997 4.46243 8.96241 2 12 2C15.0375 2 17.5 4.46243 17.5 7.5C17.5 10.5376 15.0375 13 12 13C8.96241 13 6.49997 10.5376 6.49997 7.5Z"
+                  fill="currentColor"
+                />
+              </svg>
               {group.artist.imageURL && (
                 <Image
                   src={group.artist.imageURL}
                   alt={`${group.artist.name} Profile Image`}
-                  class="h-12 w-12 rounded-full object-cover"
+                  class="invisible relative h-12 w-12 rounded-full object-cover"
                 />
               )}
             </div>
@@ -69,16 +95,30 @@ const tabGroups = toTabGroups(tabs)
                 >
                   <div
                     class={twMerge(
-                      'relative h-10 w-10 rounded bg-stone-100',
+                      'relative flex h-10 w-10 items-center justify-center rounded bg-stone-100',
                       "after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:transition-colors after:content-[''] group-hover:after:bg-black/5",
                       'dark:bg-stone-800 dark:after:ring-white/10',
                     )}
                   >
+                    <svg
+                      class={twMerge(
+                        'absolute h-6 w-6 text-stone-200',
+                        'dark:text-stone-700',
+                      )}
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.968 4.19884C19.8297 4.20975 19.6394 4.24058 19.3014 4.29692L10.5014 5.76359C10.249 5.80564 10.1145 5.82874 10.0186 5.85226L10.0089 5.85469L10.0081 5.8647C10.0007 5.96308 10 6.09962 10 6.35542V18L10 18.0036C9.99804 20.2111 8.20793 22 6 22C3.79086 22 2 20.2091 2 18C2 15.7909 3.79086 14 6 14C6.72858 14 7.41166 14.1948 8 14.5351L8 6.327C7.99998 6.11089 7.99995 5.89705 8.0138 5.71387C8.02921 5.51013 8.06541 5.2733 8.17521 5.02853C8.32965 4.68426 8.57834 4.3907 8.89253 4.18176C9.11591 4.03322 9.34358 3.95857 9.54201 3.90988C9.72042 3.8661 9.93135 3.83097 10.1445 3.79547L19.0074 2.31832C19.2977 2.2699 19.5753 2.22361 19.8106 2.20504C20.0647 2.18499 20.3747 2.18614 20.6964 2.30563C21.1347 2.46845 21.5022 2.77973 21.7349 3.18536C21.9056 3.48306 21.9577 3.78866 21.9797 4.04255C22.0001 4.27768 22 4.55902 22 4.8533L22 16C22 16.0557 21.9955 16.1102 21.9867 16.1634C21.901 18.2968 20.1444 20 17.99 20C15.7809 20 13.99 18.2091 13.99 16C13.99 13.7909 15.7809 12 17.99 12C18.7227 12 19.4094 12.197 20 12.5409V4.88876C20 4.54605 19.9991 4.35324 19.9872 4.21511L19.9855 4.19756L19.968 4.19884Z"
+                        fill="currentColor"
+                      />
+                    </svg>
                     {tab.data.albumImageURL && (
                       <Image
                         src={tab.data.albumImageURL}
                         alt={`${tab.data.album} Album Cover`}
-                        class="h-10 w-10 rounded object-cover"
+                        class="invisible relative h-10 w-10 rounded object-cover"
                       />
                     )}
                   </div>
