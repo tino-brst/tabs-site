@@ -9,7 +9,10 @@ const tabs = await getCollection('tabs')
 const tabGroups = toTabGroups(tabs)
 ---
 
-<Layout title="Tino's Tabs">
+<Layout
+  title="Tino's Tabs"
+  description="An evergrowing collection of curated guitar tabs. With video references, lyrics, and other useful stuff."
+>
   <h1 class="mb-4 text-3xl font-semibold">Tino's Tabs</h1>
   <p class={twMerge('mb-8 max-w-md text-stone-500', 'dark:text-stone-400')}>
     A collection of tabs I’ve put together throughout the years, with video

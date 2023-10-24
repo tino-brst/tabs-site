@@ -23,7 +23,10 @@ const data = tab.data
 const { Content } = await tab.render()
 ---
 
-<Layout title={`${data.title} - Tino's Tabs`}>
+<Layout
+  title={`${data.title} - Tino's Tabs`}
+  description={`Learn how to play ${data.title} by ${data.artist}.`}
+>
   <a
     href="/"
     class={twMerge(
