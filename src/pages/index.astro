@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
 import { Image } from 'astro:assets'
 import { twMerge } from 'tailwind-merge'
-import { toTabGroups } from '../utils'
+import { isNotDraft, toTabGroups } from '../utils'
 import UserIcon from '../components/icons/UserIcon.astro'
 import MusicNoteIcon from '../components/icons/MusicNoteIcon.astro'
 
@@ -37,8 +37,8 @@ const tabGroups = toTabGroups(tabs)
               <div
                 class={twMerge('text-sm text-stone-500', 'dark:text-stone-400')}
               >
-                {`${group.tabs.length} ${
-                  group.tabs.length === 1 ? 'tab' : 'tabs'
+                {`${group.tabs.filter(isNotDraft).length} ${
+                  group.tabs.filter(isNotDraft).length === 1 ? 'tab' : 'tabs'
                 }`}
               </div>
             </div>
@@ -68,18 +68,21 @@ const tabGroups = toTabGroups(tabs)
             {group.tabs.map((tab) => (
               <li>
                 <a
-                  href={`/${tab.slug}`}
+                  data-disabled={tab.data.isDraft}
+                  href={tab.data.isDraft ? undefined : `/${tab.slug}`}
                   class={twMerge(
                     'group flex items-center gap-3 rounded-lg p-2 transition-colors',
                     'hover:bg-stone-100',
                     'dark:hover:bg-stone-800',
+                    'data-[disabled]:pointer-events-none',
                   )}
                 >
                   <div
                     class={twMerge(
-                      'relative flex h-10 w-10 items-center justify-center rounded bg-stone-100',
+                      'relative flex h-10 w-10 shrink-0 items-center justify-center rounded bg-stone-100',
                       "after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:transition-colors after:content-[''] group-hover:after:bg-black/5",
                       'dark:bg-stone-800 dark:after:ring-white/10',
+                      'group-data-[disabled]:opacity-50',
                     )}
                   >
                     <MusicNoteIcon
@@ -97,11 +100,31 @@ const tabGroups = toTabGroups(tabs)
                     )}
                   </div>
                   <div class="flex flex-col">
-                    <div class="leading-snug">{tab.data.title}</div>
+                    <div class="flex items-center gap-2">
+                      <div
+                        class={twMerge(
+                          'leading-snug',
+                          'group-data-[disabled]:opacity-50',
+                        )}
+                      >
+                        {tab.data.title}
+                      </div>
+                      {tab.data.isDraft && (
+                        <div
+                          class={twMerge(
+                            'rounded-full bg-stone-200 px-2 py-0.5 text-[0.625rem] font-semibold text-stone-600',
+                            'dark:bg-stone-700 dark:text-stone-300',
+                          )}
+                        >
+                          SOON
+                        </div>
+                      )}
+                    </div>
                     <div
                       class={twMerge(
                         'text-sm leading-snug text-stone-500',
                         'dark:text-stone-400',
+                        'group-data-[disabled]:opacity-50',
                       )}
                     >
                       {tab.data.album}

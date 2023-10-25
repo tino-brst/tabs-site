@@ -48,3 +48,5 @@ export function formatNumberWithOrdinalSuffix(value: number): string {
   const units = value % 100
   return value + (suffix[(units - 20) % 10] ?? suffix[units] ?? suffix[0])
 }
+
+export const isNotDraft = (tab: CollectionEntry<'tabs'>) => !tab.data.isDraft
