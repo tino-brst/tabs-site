@@ -29,9 +29,9 @@ const tabGroups = toTabGroups(tabs)
             'dark:bg-stone-900',
           )}
         >
-          <div class="flex items-center justify-between gap-2">
-            <div class="flex flex-col">
-              <div class="text-2xl font-semibold leading-tight">
+          <div class="flex items-center justify-between gap-3">
+            <div class="flex flex-col overflow-hidden">
+              <div class="truncate text-2xl font-semibold leading-tight">
                 {group.artist.name}
               </div>
               <div
@@ -44,7 +44,7 @@ const tabGroups = toTabGroups(tabs)
             </div>
             <div
               class={twMerge(
-                'relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-stone-100',
+                'relative flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-stone-100',
                 "after:absolute after:inset-0 after:rounded-full after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
                 'dark:bg-stone-800 dark:after:ring-white/10',
               )}
@@ -99,11 +99,11 @@ const tabGroups = toTabGroups(tabs)
                       />
                     )}
                   </div>
-                  <div class="flex flex-col">
+                  <div class="flex flex-col overflow-hidden">
                     <div class="flex items-center gap-2">
                       <div
                         class={twMerge(
-                          'leading-snug',
+                          'truncate leading-snug',
                           'group-data-[disabled]:opacity-50',
                         )}
                       >
@@ -122,7 +122,7 @@ const tabGroups = toTabGroups(tabs)
                     </div>
                     <div
                       class={twMerge(
-                        'text-sm leading-snug text-stone-500',
+                        'truncate text-sm leading-snug text-stone-500',
                         'dark:text-stone-400',
                         'group-data-[disabled]:opacity-50',
                       )}
