@@ -112,11 +112,12 @@ const tabGroups = toTabGroups(tabs)
                       {tab.data.isDraft && (
                         <div
                           class={twMerge(
-                            'rounded-full bg-stone-200 px-2 py-0.5 text-[0.625rem] font-semibold text-stone-600',
+                            'rounded-full bg-stone-200 px-2 py-0.5 text-[0.625rem] font-semibold uppercase text-stone-600',
                             'dark:bg-stone-700 dark:text-stone-300',
                           )}
                         >
-                          SOON
+                          <span class="hidden sm:inline">Coming</span>
+                          soon
                         </div>
                       )}
                     </div>
