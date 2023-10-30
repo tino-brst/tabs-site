@@ -16,6 +16,7 @@ const tabs = defineCollection({
       appleMusicURL: z.string().url().optional(),
       videoIDs: z.string().array().optional(),
       isDraft: z.boolean().optional(),
+      ultimateGuitarURL: z.string().url().optional(),
     }),
 })
 
