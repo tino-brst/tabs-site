@@ -9,6 +9,7 @@ artistImageURL: '../../../assets/images/artists/dave-matthews-band.jpg'
 spotifyURL: 'https://spotify.link/pAfHYA3z5Db'
 appleMusicURL: 'https://music.apple.com/album/singing-from-the-windows/1667688037?i=1667689018&l'
 videoIDs: ['hRfiWzUsBGw']
+ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/dave-matthews/singing-from-the-windows-tabs-3080054'
 slug: 'singing-from-the-windows'
 ---
 

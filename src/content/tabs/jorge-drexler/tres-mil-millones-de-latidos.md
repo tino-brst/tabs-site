@@ -8,6 +8,7 @@ artistImageURL: '../../../assets/images/artists/jorge-drexler.jpg'
 spotifyURL: 'https://spotify.link/ZjgIW9dB3Db'
 appleMusicURL: 'https://music.apple.com/album/tres-mil-millones-de-latidos/360764667?i=360764757'
 videoIDs: ['aguS_1cgrkc']
+ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/jorge-drexler/tres-mil-millones-de-latidos-tabs-3099890'
 slug: 'tres-mil-millones-de-latidos'
 ---
 
