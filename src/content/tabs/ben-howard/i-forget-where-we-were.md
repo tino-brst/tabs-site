@@ -8,6 +8,7 @@ artistImageURL: '../../../assets/images/artists/ben-howard.jpg'
 spotifyURL: 'https://spotify.link/o9Wg0gUz5Db'
 appleMusicURL: 'https://music.apple.com/album/i-forget-where-we-were/1440821129?i=1440821135&l'
 videoIDs: ['ks1a_8aNLLo']
+ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/ben-howard/i-forget-where-we-were-tabs-1720659'
 slug: 'i-forget-where-we-where'
 ---
 

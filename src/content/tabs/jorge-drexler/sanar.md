@@ -8,6 +8,7 @@ artistImageURL: '../../../assets/images/artists/jorge-drexler.jpg'
 spotifyURL: 'https://spotify.link/wB73lx9z5Db'
 appleMusicURL: 'https://music.apple.com/album/sanar/197238915?i=197240964&l'
 videoIDs: ['2CbEEJt7CK0', 'xrPEB3ASbDI']
+ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/jorge-drexler/sanar-tabs-4067554'
 slug: 'sanar'
 ---
 

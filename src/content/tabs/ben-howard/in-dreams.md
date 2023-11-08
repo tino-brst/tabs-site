@@ -8,6 +8,7 @@ artistImageURL: '../../../assets/images/artists/ben-howard.jpg'
 spotifyURL: 'https://spotify.link/2XFdybYz5Db'
 appleMusicURL: 'https://music.apple.com/album/in-dreams/1440821129?i=1440821138&l'
 videoIDs: ['RWPMay0tPx4']
+ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/ben-howard/in-dreams-tabs-1680648'
 slug: 'in-dreams'
 ---
 
