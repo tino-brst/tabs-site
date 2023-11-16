@@ -120,6 +120,11 @@ const tabGroups = toTabGroups(tabs)
                           soon
                         </div>
                       )}
+                      {tab.data.isNew && (
+                        <div class="rounded-full bg-blue-500 px-2 py-0.5 text-[0.625rem] font-semibold uppercase text-white">
+                          New
+                        </div>
+                      )}
                     </div>
                     <div
                       class={twMerge(
