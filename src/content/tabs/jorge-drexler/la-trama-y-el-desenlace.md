@@ -9,7 +9,7 @@ spotifyURL: 'https://open.spotify.com/track/563EHELbGcAwXlAHbWmK3f?si=UbS-DwXFQU
 appleMusicURL: 'https://music.apple.com/album/la-trama-y-el-desenlace/360764667?i=360764758'
 videoIDs: ['w7ooq2YWvTA', 'TnewkOBkw8Q']
 slug: 'la-trama-y-el-desenlace'
-isDraft: true
+isNew: true
 ---
 
 ```
