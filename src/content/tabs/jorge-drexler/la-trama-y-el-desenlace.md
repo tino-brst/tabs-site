@@ -8,6 +8,7 @@ artistImageURL: '../../../assets/images/artists/jorge-drexler.jpg'
 spotifyURL: 'https://open.spotify.com/track/563EHELbGcAwXlAHbWmK3f?si=UbS-DwXFQUqcvBGtt10E1w'
 appleMusicURL: 'https://music.apple.com/album/la-trama-y-el-desenlace/360764667?i=360764758'
 videoIDs: ['w7ooq2YWvTA', 'TnewkOBkw8Q']
+ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/jorge-drexler/la-trama-y-el-desenlace-tabs-5034226'
 slug: 'la-trama-y-el-desenlace'
 isNew: true
 ---
@@ -225,8 +226,6 @@ D|---9---4---2---|
 A|---9---4---2---|
 E|---7---2---0---|
 ```
-
-`↓` Where the voice comes in
 
 ## Lyrics
 
