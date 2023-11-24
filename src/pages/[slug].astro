@@ -226,4 +226,14 @@ const { Content } = await tab.render()
     @apply rounded border border-stone-100 bg-stone-50 px-1 text-sm text-stone-600;
     @apply dark:border-stone-700 dark:bg-stone-800 dark:text-stone-400;
   }
+
+  :global(.hljs.language-tab .hljs-section) {
+    @apply text-stone-900;
+    @apply dark:text-stone-100;
+  }
+
+  :global(.hljs.language-tab .hljs-string .hljs-dash) {
+    @apply text-stone-300;
+    @apply dark:text-stone-600;
+  }
 </style>
