@@ -229,8 +229,7 @@ E|---7---2---0---|
 
 ## Lyrics
 
-`[Verse 1]`
-
+`[Verse 1]`  
 Camino por Madrid en tu compañía  
 Mi mano en tu cintura copiando a tu mano en la cintura mía  
 A paso lento, como bostezando  
@@ -238,8 +237,7 @@ Como quien besa el barrio al irlo pisando
 Como quien sabe que cuenta con la tarde entera  
 Sin nada más que hacer que acariciar aceras
 
-`[Pre-Chorus 1]`
-
+`[Pre-Chorus 1]`  
 Y sin planearlo tú, acaso  
 Como quien sin quererlo va y lo hace  
 Te vi cambiar tu paso  
@@ -248,13 +246,11 @@ En la misma fase que mi propio paso uh-oh-oh
 Ir y venir, seguir y guiar, dar y tener  
 Entrar y salir de fase
 
-`[Chorus 1]`
-
+`[Chorus 1]`  
 Amar la trama más que el desenlace  
 Amar la trama más que el desenlace
 
-`[Verse 2]`
-
+`[Verse 2]`  
 Fue un salto ínfimo, disimulado  
 Un mínimo cambio de ritmo apenas, un paso cambiado  
 Y dos cuerdas que resuenan como un mismo número en distintos dados  
@@ -262,8 +258,7 @@ O el paso exacto de los soldados
 Como dos focos intermitentes  
 Súbitamente así, sincronizados
 
-`[Pre-Chorus 2]`
-
+`[Pre-Chorus 2]`  
 Dos paseantes distraídos  
 Han conseguido que el reloj de arena  
 De la pena pare, que se despedace  
@@ -271,33 +266,27 @@ Y así seguir el rumbo que el viento trace
 Ir y venir, seguir y guiar, dar y tener  
 Entrar y salir de fase
 
-`[Chorus 2]`
-
+`[Chorus 2]`  
 Amar la trama más que el desenlace  
 Amar la trama más que el desenlace
 
-`[Pre-Chorus 3]`
-
+`[Pre-Chorus 3]`  
 Ir por ahí como en un film de Éric Rohmer  
 Sin esperar que algo pase
 
-`[Chorus 3]`
-
+`[Chorus 3]`  
 Amar la trama más que el desenlace  
 Amar la trama más que el desenlace
 
-`[Pre-Chorus 4]`
-
+`[Pre-Chorus 4]`  
 Te vi cambiar tu paso hasta ponerlo en fase  
 En la misma fase que mi propio paso oh-oh
 
-`[Chorus 4]`
-
+`[Chorus 4]`  
 Amar la trama más que el desenlace  
 Amar la trama más que el desenlace  
 Amar la trama más que el desenlace  
 Amar la trama más que el desenlace
 
-`[Outro]`
-
+`[Outro]`  
 Camino por Madrid en tu compañía
