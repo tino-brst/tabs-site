@@ -4,11 +4,11 @@ import PlayIcon from './icons/PlayIcon.astro'
 import SearchIcon from './icons/SearchIcon.astro'
 
 type Props = {
-  videoIDs: Array<string>
+  videos: Array<string>
   searchQuery: string
 }
 
-const { videoIDs: urls, searchQuery } = Astro.props
+const { videos: urls, searchQuery } = Astro.props
 
 // TODO add start-at support (e.g. Sanar has a full show, and should start at a certain time where the song is played)
 // Should probably switch back to using the full YouTube embed links instead of the IDs

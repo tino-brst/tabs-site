@@ -14,7 +14,8 @@ const tabs = defineCollection({
       artistImageURL: image().optional(),
       spotifyURL: z.string().url().optional(),
       appleMusicURL: z.string().url().optional(),
-      videoIDs: z.string().array().optional(),
+      /** YouTube video IDs, with support for timestamps using the format `{id}?start={timestamp}` (e.g. `abc123?start=30`, which starts on second 30) */
+      videos: z.string().array().optional(),
       isDraft: z.boolean().optional(),
       isNew: z.boolean().optional(),
       ultimateGuitarURL: z.string().url().optional(),

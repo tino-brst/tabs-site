@@ -7,7 +7,7 @@ albumImageURL: '../../../assets/images/albums/born-and-raised.jpg'
 artistImageURL: '../../../assets/images/artists/john-mayer.jpg'
 spotifyURL: 'https://spotify.link/d3pBz2zO4Db'
 appleMusicURL: 'https://music.apple.com/album/queen-of-california/516701586?i=516701712&l'
-videoIDs: ['uJpvUTDB4Ps']
+videos: ['uJpvUTDB4Ps']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/john-mayer/shadow-days-tabs-1178389'
 slug: 'shadow-days'
 ---

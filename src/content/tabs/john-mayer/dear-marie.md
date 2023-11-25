@@ -7,7 +7,7 @@ albumImageURL: '../../../assets/images/albums/paradise-valley.jpg'
 artistImageURL: '../../../assets/images/artists/john-mayer.jpg'
 spotifyURL: 'https://spotify.link/sX0pbnm52Db'
 appleMusicURL: 'https://music.apple.com/album/dear-marie/672720304?i=672720308&l'
-videoIDs: ['eZHBH1MoT3g', '4oKYnjCRtnY']
+videos: ['eZHBH1MoT3g', '4oKYnjCRtnY']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/john-mayer/dear-marie-tabs-1414326'
 slug: 'dear-marie'
 ---

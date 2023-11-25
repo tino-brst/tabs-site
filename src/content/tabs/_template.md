@@ -7,7 +7,7 @@ artist: 'John Doe'
 # artistImageURL: '../../../assets/images/artists/john-doe.jpg'
 # spotifyURL: 'https://open.spotify.com/track/...'
 # appleMusicURL: 'https://music.apple.com/album/...'
-videoIDs: ['dQw4w9WgXcQ']
+videos: ['dQw4w9WgXcQ']
 # ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/john-doe/foo-123123'
 slug: 'foo'
 ---
