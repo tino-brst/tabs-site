@@ -22,126 +22,133 @@ const tabGroups = toTabGroups(tabs)
   </p>
   <ol class="flex flex-col gap-6">
     {
-      tabGroups.map((group) => (
-        <li
-          class={twMerge(
-            'flex flex-col gap-3 rounded-2xl bg-stone-50 p-4 pb-0',
-            'dark:bg-stone-900',
-          )}
-        >
-          <div class="flex items-center justify-between gap-3">
-            <div class="flex flex-col overflow-hidden">
-              <div class="truncate text-2xl font-semibold leading-tight">
-                {group.artist.name}
-              </div>
-              <div
-                class={twMerge('text-sm text-stone-500', 'dark:text-stone-400')}
-              >
-                {`${group.tabs.filter(isNotDraft).length} ${
-                  group.tabs.filter(isNotDraft).length === 1 ? 'tab' : 'tabs'
-                }`}
-              </div>
-            </div>
-            <div
-              class={twMerge(
-                'relative flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-stone-100',
-                "after:absolute after:inset-0 after:rounded-full after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
-                'dark:bg-stone-800 dark:after:ring-white/10',
-              )}
-            >
-              <UserIcon
-                class={twMerge(
-                  'absolute h-11 w-11 translate-y-2 text-stone-200',
-                  'dark:text-stone-700',
-                )}
-              />
-              {group.artist.imageURL && (
-                <Image
-                  src={group.artist.imageURL}
-                  alt={`${group.artist.name} Profile Image`}
-                  class="relative h-12 w-12 rounded-full object-cover"
-                />
-              )}
-            </div>
-          </div>
-          <ol class="-mx-4 flex flex-col px-2 pb-2">
-            {group.tabs.map((tab) => (
-              <li>
-                <a
-                  data-disabled={tab.data.isDraft}
-                  href={tab.data.isDraft ? undefined : `/${tab.slug}`}
+      tabGroups.map((group) => {
+        const tabsCount = group.tabs.filter(isNotDraft).length
+
+        return (
+          <li
+            class={twMerge(
+              'flex flex-col gap-3 rounded-2xl bg-stone-50 p-4 pb-0',
+              'dark:bg-stone-900',
+            )}
+          >
+            <div class="flex items-center justify-between gap-3">
+              <div class="flex flex-col overflow-hidden">
+                <div class="truncate text-2xl font-semibold leading-tight">
+                  {group.artist.name}
+                </div>
+                <div
                   class={twMerge(
-                    'group flex items-center gap-3 rounded-lg p-2 transition-colors',
-                    'hover:bg-stone-100',
-                    'dark:hover:bg-stone-800',
-                    'data-[disabled]:pointer-events-none',
+                    'text-sm text-stone-500',
+                    'dark:text-stone-400',
                   )}
                 >
-                  <div
+                  {tabsCount === 0 && 'No tabs just yet'}
+                  {tabsCount === 1 && '1 tab'}
+                  {tabsCount > 1 && `${tabsCount} tabs`}
+                </div>
+              </div>
+              <div
+                class={twMerge(
+                  'relative flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-stone-100',
+                  "after:absolute after:inset-0 after:rounded-full after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
+                  'dark:bg-stone-800 dark:after:ring-white/10',
+                )}
+              >
+                <UserIcon
+                  class={twMerge(
+                    'absolute h-11 w-11 translate-y-2 text-stone-200',
+                    'dark:text-stone-700',
+                  )}
+                />
+                {group.artist.imageURL && (
+                  <Image
+                    src={group.artist.imageURL}
+                    alt={`${group.artist.name} Profile Image`}
+                    class="relative h-12 w-12 rounded-full object-cover"
+                  />
+                )}
+              </div>
+            </div>
+            <ol class="-mx-4 flex flex-col px-2 pb-2">
+              {group.tabs.map((tab) => (
+                <li>
+                  <a
+                    data-disabled={tab.data.isDraft}
+                    href={tab.data.isDraft ? undefined : `/${tab.slug}`}
                     class={twMerge(
-                      'relative flex h-10 w-10 shrink-0 items-center justify-center rounded bg-stone-100',
-                      "after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:transition-colors after:content-[''] group-hover:after:bg-black/5",
-                      'dark:bg-stone-800 dark:after:ring-white/10',
-                      'group-data-[disabled]:opacity-50',
+                      'group flex items-center gap-3 rounded-lg p-2 transition-colors',
+                      'hover:bg-stone-100',
+                      'dark:hover:bg-stone-800',
+                      'data-[disabled]:pointer-events-none',
                     )}
                   >
-                    <MusicNoteIcon
-                      class={twMerge(
-                        'absolute h-6 w-6 text-stone-200',
-                        'dark:text-stone-700',
-                      )}
-                    />
-                    {tab.data.albumImageURL && (
-                      <Image
-                        src={tab.data.albumImageURL}
-                        alt={`${tab.data.album} Album Cover`}
-                        class="relative h-10 w-10 rounded object-cover"
-                      />
-                    )}
-                  </div>
-                  <div class="flex flex-col overflow-hidden">
-                    <div class="flex items-center gap-2">
-                      <div
-                        class={twMerge(
-                          'truncate leading-snug',
-                          'group-data-[disabled]:opacity-50',
-                        )}
-                      >
-                        {tab.data.title}
-                      </div>
-                      {tab.data.isDraft && (
-                        <div
-                          class={twMerge(
-                            'rounded-full bg-stone-200 px-2 py-0.5 text-[0.625rem] font-semibold uppercase text-stone-600',
-                            'dark:bg-stone-700 dark:text-stone-300',
-                          )}
-                        >
-                          <span class="hidden sm:inline">Coming</span>
-                          soon
-                        </div>
-                      )}
-                      {tab.data.isNew && (
-                        <div class="rounded-full bg-blue-500 px-2 py-0.5 text-[0.625rem] font-semibold uppercase text-white">
-                          New
-                        </div>
-                      )}
-                    </div>
                     <div
                       class={twMerge(
-                        'truncate text-sm leading-snug text-stone-500',
-                        'dark:text-stone-400',
+                        'relative flex h-10 w-10 shrink-0 items-center justify-center rounded bg-stone-100',
+                        "after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:transition-colors after:content-[''] group-hover:after:bg-black/5",
+                        'dark:bg-stone-800 dark:after:ring-white/10',
                         'group-data-[disabled]:opacity-50',
                       )}
                     >
-                      {tab.data.album}
+                      <MusicNoteIcon
+                        class={twMerge(
+                          'absolute h-6 w-6 text-stone-200',
+                          'dark:text-stone-700',
+                        )}
+                      />
+                      {tab.data.albumImageURL && (
+                        <Image
+                          src={tab.data.albumImageURL}
+                          alt={`${tab.data.album} Album Cover`}
+                          class="relative h-10 w-10 rounded object-cover"
+                        />
+                      )}
                     </div>
-                  </div>
-                </a>
-              </li>
-            ))}
-          </ol>
-        </li>
-      ))
+                    <div class="flex flex-col overflow-hidden">
+                      <div class="flex items-center gap-2">
+                        <div
+                          class={twMerge(
+                            'truncate leading-snug',
+                            'group-data-[disabled]:opacity-50',
+                          )}
+                        >
+                          {tab.data.title}
+                        </div>
+                        {tab.data.isDraft && (
+                          <div
+                            class={twMerge(
+                              'rounded-full bg-stone-200 px-2 py-0.5 text-[0.625rem] font-semibold uppercase text-stone-600',
+                              'dark:bg-stone-700 dark:text-stone-300',
+                            )}
+                          >
+                            <span class="hidden sm:inline">Coming</span>
+                            soon
+                          </div>
+                        )}
+                        {tab.data.isNew && (
+                          <div class="rounded-full bg-blue-500 px-2 py-0.5 text-[0.625rem] font-semibold uppercase text-white">
+                            New
+                          </div>
+                        )}
+                      </div>
+                      <div
+                        class={twMerge(
+                          'truncate text-sm leading-snug text-stone-500',
+                          'dark:text-stone-400',
+                          'group-data-[disabled]:opacity-50',
+                        )}
+                      >
+                        {tab.data.album}
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </li>
+        )
+      })
     }
   </ol>
 </Layout>
