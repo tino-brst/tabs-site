@@ -10,7 +10,6 @@ appleMusicURL: 'https://music.apple.com/album/cabildo-y-juramento/1480625429?i=1
 videos: ['Jp61xnO49Bo?start=660', 'Sz6rpehclbc?start=1055']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/conociendo-rusia/cabildo-y-juramento-tabs-5042794'
 slug: 'cabildo-y-juramento'
-isNew: true
 ---
 
 ```

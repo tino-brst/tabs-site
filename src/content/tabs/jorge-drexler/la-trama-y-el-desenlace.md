@@ -10,7 +10,6 @@ appleMusicURL: 'https://music.apple.com/album/la-trama-y-el-desenlace/360764667?
 videos: ['w7ooq2YWvTA', 'TnewkOBkw8Q']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/jorge-drexler/la-trama-y-el-desenlace-tabs-5034226'
 slug: 'la-trama-y-el-desenlace'
-isNew: true
 ---
 
 ```
