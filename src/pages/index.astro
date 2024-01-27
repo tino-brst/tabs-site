@@ -28,11 +28,16 @@ const tabGroups = toTabGroups(tabs)
         return (
           <li
             class={twMerge(
-              'flex flex-col gap-3 rounded-2xl bg-stone-50 p-4 pb-0',
+              'relative flex flex-col overflow-clip rounded-2xl bg-stone-50',
               'dark:bg-stone-900',
             )}
           >
-            <div class="flex items-center justify-between gap-3">
+            <div
+              class={twMerge(
+                'sticky top-0 flex items-center justify-between gap-3 bg-stone-50/90 px-4 py-3 shadow-[inset_0_-1px_0_theme(colors.stone.50/50%)] backdrop-blur-md backdrop-saturate-200',
+                'dark:bg-stone-900/80 dark:shadow-[inset_0_-1px_0_theme(colors.stone.900/50%)]',
+              )}
+            >
               <div class="flex flex-col overflow-hidden">
                 <div class="truncate text-2xl font-semibold leading-tight">
                   {group.artist.name}
@@ -70,7 +75,7 @@ const tabGroups = toTabGroups(tabs)
                 )}
               </div>
             </div>
-            <ol class="-mx-4 flex flex-col px-2 pb-2">
+            <ol class="flex flex-col px-2 pb-2">
               {group.tabs.map((tab) => (
                 <li>
                   <a
