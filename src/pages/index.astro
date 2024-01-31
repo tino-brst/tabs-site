@@ -34,11 +34,11 @@ const tabGroups = toTabGroups(tabs)
           >
             <div
               class={twMerge(
-                'sticky top-0 flex items-center justify-between gap-3 bg-stone-50/90 px-4 py-3 shadow-[inset_0_-1px_0_theme(colors.stone.50/50%)] backdrop-blur-md backdrop-saturate-200',
+                'sticky top-0 z-10 flex items-center justify-between gap-3 bg-stone-50/90 px-4 py-3 shadow-[inset_0_-1px_0_theme(colors.stone.50/50%)] backdrop-blur-md backdrop-saturate-200',
                 'dark:bg-stone-900/80 dark:shadow-[inset_0_-1px_0_theme(colors.stone.900/50%)]',
               )}
             >
-              <div class="flex flex-col overflow-hidden">
+              <div class="flex flex-col overflow-clip">
                 <div class="truncate text-2xl font-semibold leading-tight">
                   {group.artist.name}
                 </div>
@@ -55,7 +55,7 @@ const tabGroups = toTabGroups(tabs)
               </div>
               <div
                 class={twMerge(
-                  'relative flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-stone-100',
+                  'relative flex h-12 w-12 shrink-0 items-center justify-center overflow-clip rounded-full bg-stone-100',
                   "after:absolute after:inset-0 after:rounded-full after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
                   'dark:bg-stone-800 dark:after:ring-white/10',
                 )}
@@ -110,7 +110,7 @@ const tabGroups = toTabGroups(tabs)
                         />
                       )}
                     </div>
-                    <div class="flex flex-col overflow-hidden">
+                    <div class="flex flex-col overflow-clip">
                       <div class="flex items-center gap-2">
                         <div
                           class={twMerge(
