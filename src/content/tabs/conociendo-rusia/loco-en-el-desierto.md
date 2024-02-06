@@ -10,7 +10,6 @@ appleMusicURL: 'https://music.apple.com/album/loco-en-el-desierto/1437197456?i=1
 videos: ['Jp61xnO49Bo?start=318', 'vHvI2vPrBK4?start=1389']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/conociendo-rusia/loco-en-el-desierto-tabs-5088304'
 slug: 'loco-en-el-desierto'
-isNew: true
 ---
 
 ```
@@ -137,7 +136,6 @@ D|---2---6---4-----2---0---2---2---|---2---|
 A|---2---6---4-----2---2---0---2---|---2---|
 E|---0---4---2-----0---0-----------|---0---|
                                  x2|
-
 ```
 
 ## Lyrics
