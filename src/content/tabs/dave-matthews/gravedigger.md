@@ -25,7 +25,7 @@ E|--------3----0---------3---3-----------|
 
 [Verse]
 
-'Cyrus Jones, 1810 to 1913 ...'
+"Cyrus Jones, 1810 to 1913 ..."
 
 e|---0-----------0---|
 B|---1---0-------1---|
@@ -39,7 +39,7 @@ E|-------3---1-------|
 
 Just like the intro, with a bit less hammer-ons
 
-'Gravedigger, when you dig my grave ...'
+"Gravedigger, when you dig my grave ..."
 
 e|---0-------0-----0-------------0-----|
 B|---1---0---0-----1---0---3-----0h1---|
@@ -53,7 +53,7 @@ E|-------3---0---------3---3-----------|
 
 On the last repetition, skip the last chord.
 
-'Ring around the rosie ...'
+"Ring around the rosie ..."
 
 e|---1-------0-----3-------|
 B|---3-------1-----0---3---|
@@ -65,7 +65,7 @@ E|-------1---------3-------|
 
 [Chorus 4]
 
-'Gravedigger, when you dig my grave ...'
+"Gravedigger, when you dig my grave ..."
 
 e|---0-------0-----0-------------0-----|
 B|---1---0---0-----1---0---3-----0h1---|
@@ -79,7 +79,7 @@ E|-------3---0---------3---3-----------|
 
 Played a bit faster, skipping the last chord during the last repetition
 
-'Gravedigger ...'
+"Gravedigger ..."
 
 e|---0---------------|
 B|---1---0-------0---|
