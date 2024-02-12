@@ -9,6 +9,7 @@ artistImageURL: '../../../assets/images/artists/john-mayer.jpg'
 spotifyURL: 'https://open.spotify.com/track/4Im6GRj17qa7NW76OsJh1s?si=8401204bd4a14147'
 appleMusicURL: 'https://music.apple.com/album/i-guess-i-just-feel-like/1578974375?i=1578974717'
 videos: ['HNaR5f4Uy00', 'KKgoF64zVRk']
+ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/john-mayer/i-guess-i-just-feel-like-tabs-5143339'
 slug: 'i-guess-i-just-feel-like'
 isNew: true
 ---
