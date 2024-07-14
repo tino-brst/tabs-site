@@ -12,8 +12,6 @@ slug: 'here-on-out'
 isNew: true
 ---
 
-Dave hasn't been particularly consistent with his picking patterns for this one, and some chords he's stopped using in more recent live performances. This tab uses the early versions' chords (which are probably closer to the studio recording), and keeps the picking patterns a bit more consistent per-section.
-
 ```
 [Intro]
 
