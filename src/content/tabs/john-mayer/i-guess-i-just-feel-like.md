@@ -180,7 +180,7 @@ E|-----------|
 ```
 
 `/` Slide up  
-`h` Hammer on
+`h` Hammer-on
 
 ## Lyrics
 

@@ -110,7 +110,7 @@ A|---7---5---4---4h5-4---|
 E|---7---5---5---5---5---|
 ```
 
-`h` Hammer on  
+`h` Hammer-on  
 `*` Emphasis on difference with previous sections
 
 ## Lyrics
