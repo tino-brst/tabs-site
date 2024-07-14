@@ -141,7 +141,7 @@ A|----------------------|
 E|----------------------|
 ```
 
-`p` Pull off  
+`p` Pull-off  
 `()` Notes that may not be played but complete the shape of the chord
 
 ## Lyrics
