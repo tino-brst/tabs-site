@@ -9,7 +9,6 @@ spotifyURL: 'https://open.spotify.com/track/3P0sDX8U2Aq95IY0NueSvE'
 appleMusicURL: 'https://music.apple.com/album/gravedigger/370461373?i=370461379'
 videos: ['AYnmAiH6BLo', 'rhhTCeDKUQw']
 slug: 'gravedigger'
-isNew: true
 ---
 
 ```
