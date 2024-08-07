@@ -95,7 +95,7 @@ E|---------------1-------|
 
 [Chorus 2]
 
-Just like the first chorus, expect it skips the last couple words and chords
+Just like the first chorus, except it skips the last couple words and chords
 leading up to the post-chorus
 
 "Una canción siempre siempre ..."
@@ -122,6 +122,7 @@ E|---1-------|---1-------|
 e|---3---2---3---|
 B|---1---1---1---|
 G|---2---2---2---|
+D|---0---0---3---|
 A|---0---0-------|
 E|-----------1---|
 
