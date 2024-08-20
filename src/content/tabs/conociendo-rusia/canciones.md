@@ -10,7 +10,6 @@ spotifyURL: 'https://open.spotify.com/track/2i53D79gcZLDF9GVp9gfap?si=1ccbf0195c
 appleMusicURL: 'https://music.apple.com/album/canciones/1738288749?i=1738288943'
 videos: ['jrnRJx_Flew?start=1335']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/conociendo-rusia/canciones-tabs-5378622'
-isNew: true
 slug: 'canciones'
 ---
 
