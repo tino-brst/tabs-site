@@ -9,7 +9,6 @@ spotifyURL: 'https://open.spotify.com/track/5pcz1svKmJmsFHRwTAMFzf'
 appleMusicURL: 'https://music.apple.com/album/here-on-out/1385703539?i=1385703547'
 videos: ['zwJ41ABFV0E', 'D2RuL8KhwEE', 'ieoiAeL-uow?start=306']
 slug: 'here-on-out'
-isNew: true
 ---
 
 ```
