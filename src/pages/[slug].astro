@@ -70,7 +70,7 @@ const { Content } = await tab.render()
     <div
       class={twMerge(
         'mb-4 relative h-44 w-44 rounded-md bg-stone-50 shadow-2xl flex items-center justify-center',
-        "after:absolute after:inset-0 after:rounded-md after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
+        "after:absolute after:inset-0 after:rounded-[inherit] after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
         'dark:bg-stone-900 dark:after:ring-white/10',
       )}
     >
@@ -85,7 +85,7 @@ const { Content } = await tab.render()
           <Image
             src={data.albumImageURL}
             alt={`${data.album} Album Cover`}
-            class="relative h-44 w-44 rounded-md"
+            class="relative h-44 w-44 rounded-[inherit]"
           />
         )
       }

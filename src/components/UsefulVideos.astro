@@ -29,7 +29,7 @@ const { videos: urls, searchQuery } = Astro.props
         <div
           class={twMerge(
             'relative flex aspect-video max-w-[75%] shrink-0 basis-[75%] items-center justify-center rounded-xl bg-stone-50 shadow-lg',
-            "after:pointer-events-none after:absolute after:inset-0 after:rounded-xl after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
+            "after:pointer-events-none after:absolute after:inset-0 after:rounded-[inherit] after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
             'dark:bg-stone-900 dark:after:ring-white/10 ',
           )}
         >
@@ -40,7 +40,7 @@ const { videos: urls, searchQuery } = Astro.props
             )}
           />
           <iframe
-            class="relative aspect-video w-full rounded-xl"
+            class="relative aspect-video w-full rounded-[inherit]"
             src={`https://www.youtube.com/embed/${id}`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen

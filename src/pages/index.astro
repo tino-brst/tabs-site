@@ -56,7 +56,7 @@ const tabGroups = toTabGroups(tabs)
               <div
                 class={twMerge(
                   'relative flex h-12 w-12 shrink-0 items-center justify-center overflow-clip rounded-full bg-stone-100',
-                  "after:absolute after:inset-0 after:rounded-full after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
+                  "after:absolute after:inset-0 after:rounded-[inherit] after:ring-1 after:ring-inset after:ring-black/10 after:content-['']",
                   'dark:bg-stone-800 dark:after:ring-white/10',
                 )}
               >
@@ -70,7 +70,7 @@ const tabGroups = toTabGroups(tabs)
                   <Image
                     src={group.artist.imageURL}
                     alt={`${group.artist.name} Profile Image`}
-                    class="relative h-12 w-12 rounded-full object-cover"
+                    class="relative h-12 w-12 rounded-[inherit] object-cover"
                   />
                 )}
               </div>
@@ -91,7 +91,7 @@ const tabGroups = toTabGroups(tabs)
                     <div
                       class={twMerge(
                         'relative flex h-10 w-10 shrink-0 items-center justify-center rounded bg-stone-100',
-                        "after:absolute after:inset-0 after:rounded after:ring-1 after:ring-inset after:ring-black/10 after:transition-colors after:content-[''] group-hover:after:bg-black/5",
+                        "after:absolute after:inset-0 after:rounded-[inherit] after:ring-1 after:ring-inset after:ring-black/10 after:transition-colors after:content-[''] group-hover:after:bg-black/5",
                         'dark:bg-stone-800 dark:after:ring-white/10',
                         'group-data-[disabled]:opacity-50',
                       )}
@@ -106,7 +106,7 @@ const tabGroups = toTabGroups(tabs)
                         <Image
                           src={tab.data.albumImageURL}
                           alt={`${tab.data.album} Album Cover`}
-                          class="relative h-10 w-10 rounded object-cover"
+                          class="relative h-10 w-10 rounded-[inherit] object-cover"
                         />
                       )}
                     </div>
