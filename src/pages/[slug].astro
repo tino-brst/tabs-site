@@ -237,4 +237,16 @@ const { Content } = await tab.render()
     @apply text-stone-300;
     @apply dark:text-stone-600;
   }
+
+  :global(table) {
+    @apply border-separate border-spacing-y-1 text-sm;
+  }
+
+  :global(table th) {
+    @apply p-0;
+  }
+
+  :global(table td) {
+    @apply p-0 pr-2 align-top first:text-end last:pr-0;
+  }
 </style>
