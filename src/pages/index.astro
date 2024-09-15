@@ -68,6 +68,7 @@ const tabGroups = toTabGroups(tabs)
                 />
                 {group.artist.imageURL && (
                   <Image
+                    loading="lazy"
                     src={group.artist.imageURL}
                     alt=""
                     class="relative h-12 w-12 rounded-[inherit] object-cover"
@@ -104,6 +105,7 @@ const tabGroups = toTabGroups(tabs)
                       />
                       {tab.data.albumImageURL && (
                         <Image
+                          loading="lazy"
                           src={tab.data.albumImageURL}
                           alt=""
                           class="relative h-10 w-10 rounded-[inherit] object-cover"

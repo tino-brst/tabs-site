@@ -83,6 +83,7 @@ const { Content } = await tab.render()
       {
         data.albumImageURL && (
           <Image
+            loading="eager"
             src={data.albumImageURL}
             alt=""
             class="relative h-44 w-44 rounded-[inherit]"
