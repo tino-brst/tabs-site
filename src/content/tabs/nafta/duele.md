@@ -8,6 +8,7 @@ artistImageURL: '../../../assets/images/artists/nafta.jpeg'
 spotifyURL: 'https://open.spotify.com/track/3QsmZtbdKo05hK6VVAjUXd?si=0178ffa8ce71400c'
 appleMusicURL: 'https://music.apple.com/album/duele/1695904376?i=1695904384'
 videos: ['aJ2MunexcGI', 'NATmb6vGCFc?start=833']
+ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/nafta/duele-tabs-5427648'
 slug: 'duele'
 isNew: true
 ---
@@ -216,6 +217,7 @@ E|---6---------6--6-----------x-------------------------------------|
 ```
 
 `h` Hammer-on  
+`x` Muted string  
 `()` Notes that may not be played but complete the shape of the chord
 
 ## Lyrics
