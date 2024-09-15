@@ -179,8 +179,10 @@ A|---0---0---|
 E|-----------|
 ```
 
-`/` Slide up  
-`h` Hammer-on
+|     |           |
+| --- | --------- |
+| `/` | Slide up  |
+| `h` | Hammer-on |
 
 ## Lyrics
 

@@ -110,8 +110,10 @@ A|---7---5---4---4h5-4---|
 E|---7---5---5---5---5---|
 ```
 
-`h` Hammer-on  
-`*` Emphasis on difference with previous sections
+|      |                                                                  |
+| ---- | ---------------------------------------------------------------- |
+| `h`  | Hammer-on                                                        |
+| `()` | Notes that may not be played but complete the shape of the chord |
 
 ## Lyrics
 

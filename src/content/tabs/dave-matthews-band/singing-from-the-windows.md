@@ -71,8 +71,10 @@ A|--(2)----------2---3--(2)--|
 E|---0---2---3-----------3---|
 ```
 
-`*` Emphasis on difference with previous sections  
-`()` Notes that may not be played but complete the shape of the chord
+|      |                                                                  |
+| ---- | ---------------------------------------------------------------- |
+| `*`  | Emphasis on difference with previous sections                    |
+| `()` | Notes that may not be played but complete the shape of the chord |
 
 ## Lyrics
 

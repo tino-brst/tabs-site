@@ -150,10 +150,12 @@ A|--------------|-----------5\2---2-----|
 E|---10----8----|---3---5/7-------------|
 ```
 
-`\` Slide down  
-`/` Slide up  
-`h` Hammer-on  
-`p` Pull-off
+|     |            |
+| --- | ---------- |
+| `/` | Slide up   |
+| `\` | Slide down |
+| `h` | Hammer-on  |
+| `p` | Pull-off   |
 
 ## Lyrics
 
