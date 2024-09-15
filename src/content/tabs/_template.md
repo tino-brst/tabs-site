@@ -35,13 +35,16 @@ E|----------------------------------------|
 
 ```
 
-`\` Slide down  
-`/` Slide up  
-`h` Hammer-on  
-`p` Pull-off  
-`*` Emphasis on difference with previous sections  
-`↓` Where the voice comes in
-`()` Notes that may not be played but complete the shape of the chord
+|      |                                                                  |
+| ---- | ---------------------------------------------------------------- |
+| `/`  | Slide up                                                         |
+| `\`  | Slide down                                                       |
+| `h`  | Hammer-on                                                        |
+| `p`  | Pull-off                                                         |
+| `x`  | Muted string                                                     |
+| `↓`  | Where the voice comes in                                         |
+| `*`  | Emphasis on difference with previous sections                    |
+| `()` | Notes that may not be played but complete the shape of the chord |
 
 ## Lyrics
 
