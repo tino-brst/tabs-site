@@ -7,6 +7,7 @@ const tabs = defineCollection({
     z.object({
       title: z.string(),
       tuning: z.string(),
+      /** Only required if using a capo */
       capo: z.number().positive().optional(),
       album: z.string(),
       artist: z.string(),
