@@ -6,6 +6,8 @@ import { twMerge } from 'tailwind-merge'
 import { isNotDraft, toTabGroups } from '../utils'
 import UserIcon from '../components/icons/UserIcon.astro'
 import MusicNoteIcon from '../components/icons/MusicNoteIcon.astro'
+import CapoBadge from '../components/CapoBadge.astro'
+import TunerBadge from '../components/TunerBadge.astro'
 
 const tabs = await getCollection('tabs')
 const tabGroups = toTabGroups(tabs)
@@ -20,6 +22,28 @@ const tabGroups = toTabGroups(tabs)
     A collection of tabs I’ve put together throughout the years, with video
     references, lyrics, and other useful stuff. Hope they help!
   </p>
+
+  <div class="mb-4 flex justify-end gap-4">
+    <div
+      class={twMerge(
+        'flex items-center gap-2 text-sm font-medium text-orange-700',
+        'dark:text-orange-400',
+      )}
+    >
+      <CapoBadge />
+       Uses a capo
+    </div>
+    <div
+      class={twMerge(
+        'flex items-center gap-2 text-sm font-medium text-purple-700',
+        'dark:text-purple-400',
+      )}
+    >
+      <TunerBadge />
+       Non-standard tuning
+    </div>
+  </div>
+
   <ol class="flex flex-col gap-6">
     {
       tabGroups.map((group) => {
@@ -138,6 +162,8 @@ const tabGroups = toTabGroups(tabs)
                             New
                           </div>
                         )}
+                        {tab.data.tuning !== 'Standard' && <TunerBadge />}
+                        {tab.data.capo && <CapoBadge />}
                       </div>
                       <div
                         class={twMerge(

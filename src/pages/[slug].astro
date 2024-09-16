@@ -107,11 +107,20 @@ const { Content } = await tab.render()
           'dark:text-stone-400',
         )}
       >
-        {/* TODO show frecuency */}
-         Tuning <span
-          class={twMerge('font-medium text-stone-900', 'dark:text-stone-200')}
-          >{data.tuning}</span
+        Tuning <span
+          class={twMerge(
+            'relative font-medium text-stone-900',
+            'dark:text-stone-200',
+            data.tuning !== 'Standard' && [
+              "text-purple-600 before:content-[''] before:absolute before:inset-y-0 before:inset-x-0 before:translate-x-px before:rounded-sm before:-rotate-2 before:bg-gradient-to-r before:from-purple-500/20",
+              'dark:text-purple-200 dark:before:from-purple-500/50',
+            ],
+          )}
         >
+          <span class="relative">
+            {data.tuning}
+          </span>
+        </span>
       </div>
       <div
         class={twMerge(
@@ -120,13 +129,23 @@ const { Content } = await tab.render()
         )}
       >
         Capo <span
-          class={twMerge('font-medium text-stone-900', 'dark:text-stone-200')}
-          >{
-            data.capo
-              ? `${formatNumberWithOrdinalSuffix(data.capo)} fret`
-              : 'None'
-          }</span
+          class={twMerge(
+            'relative font-medium text-stone-900',
+            'dark:text-stone-200',
+            data.capo && [
+              "text-orange-600 before:content-[''] before:absolute before:inset-y-0 before:inset-x-0 before:translate-x-px before:rounded-sm before:-rotate-2 before:bg-gradient-to-r before:from-orange-500/20",
+              'dark:text-orange-200 dark:before:from-orange-500/40',
+            ],
+          )}
         >
+          <span class="relative">
+            {
+              data.capo
+                ? `${formatNumberWithOrdinalSuffix(data.capo)} fret`
+                : 'None'
+            }
+          </span>
+        </span>
       </div>
     </div>
     <div class="flex gap-3 self-stretch">
