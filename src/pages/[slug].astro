@@ -9,6 +9,8 @@ import { formatNumberWithOrdinalSuffix } from '../utils'
 import ChevronLeftIcon from '../components/icons/ChevronLeftIcon.astro'
 import MusicNoteIcon from '../components/icons/MusicNoteIcon.astro'
 import ArrowUpRightIcon from '../components/icons/ArrowUpRightIcon.astro'
+import MessageBubble from '../components/MessageBubble.astro'
+import avatarImageUrl from '../assets/images/avatar.png'
 
 export const getStaticPaths = (async () => {
   const tabs = await getCollection('tabs')
@@ -228,9 +230,50 @@ const { Content } = await tab.render()
       <Content />
     </div>
   </main>
+
+  <div
+    class={twMerge(
+      '[--bg-color:theme(colors.stone.300)]',
+      'my-8 flex justify-center gap-4',
+      "before:content-[''] before:h-1 before:w-1 before:rounded-full before:bg-[--bg-color]",
+      "after:content-[''] after:h-1 after:w-1 after:rounded-full after:bg-[--bg-color]",
+      'dark:[--bg-color:theme(colors.stone.600)]',
+    )}
+  >
+    <hr class={twMerge('h-1 w-1 rounded-full bg-[--bg-color] border-none')} />
+  </div>
+
+  <footer class={twMerge('rounded-2xl bg-stone-50 p-4', 'dark:bg-stone-900')}>
+    <div class="flex items-end gap-1">
+      <Image
+        loading="eager"
+        src={avatarImageUrl}
+        alt=""
+        class={twMerge(
+          'h-8 w-8 shrink-0 translate-y-0.5 rounded-full bg-gradient-to-t from-orange-300 to-orange-200 ring-1 ring-inset ring-orange-400/25',
+          'dark:ring-orange-50/25',
+        )}
+      />
+      <ul class="flex flex-col items-start gap-px">
+        <MessageBubble>Hope these help!</MessageBubble>
+        <MessageBubble>
+          If you find any mistakes or have any thoughts on the site, do let me
+          know! All feedback is more than welcome 🫶
+        </MessageBubble>
+        <MessageBubble>
+          Just <a href="mailto:tinos.tabs@icloud.com">shoot me an email</a>
+        </MessageBubble>
+      </ul>
+    </div>
+  </footer>
 </Layout>
 
 <style>
+  footer a {
+    @apply text-blue-600 underline;
+    @apply dark:text-blue-400;
+  }
+
   /* Applies styles to h2s on _this_ file/component only (doesn't reach child
    * elements like the Content's content) and then to any h2s inside the
    * .content element globally (i.e. _does_ reach child elements)
