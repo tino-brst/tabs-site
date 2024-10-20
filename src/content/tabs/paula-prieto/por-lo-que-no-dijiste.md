@@ -14,7 +14,7 @@ slug: 'por-lo-que-no-dijiste'
 isNew: true
 ---
 
-Even though there aren't _that_ many chords on this one, the picking pattern and moments in which Pau does the chord-changes vary slightly from section to section, making this one (for completeness sake) a pretty long tab. I'd start off by just learning the main pattern and chord shapes, and if later on there are any bits that stand out as slightly different and you wanna learn them, you can always come back and study them in more detail. Good luck!
+Even though there aren't _that_ many chords on this one, the picking pattern and moments in which Pau does the chord-changes vary slightly from section to section, making this one (for completeness sake) a pretty long tab. I'd start off by just learning the main pattern (which you can see in the intro) and use it throughout, and if later on there are any bits that stand out as slightly different and you wanna learn them, you can always come back and study them in more detail. Good luck!
 
 ```
 [Intro]
