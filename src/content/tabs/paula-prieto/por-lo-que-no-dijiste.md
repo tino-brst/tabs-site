@@ -9,6 +9,7 @@ artistImageURL: '../../../assets/images/artists/paula-prieto.jpg'
 spotifyURL: 'https://open.spotify.com/track/2KsZbiW7spEsptoiKOVuo8?si=12964a6f492a4298'
 appleMusicURL: 'https://music.apple.com/album/por-lo-que-no-dijiste-dec-17-2021-at-7-34-pm-apr-12-4-17pm/1623288371?i=1623288381'
 videos: ['ThhPDgzJcaM']
+ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/paula-prieto/por-lo-que-no-dijiste-tabs-5471352'
 slug: 'por-lo-que-no-dijiste'
 isNew: true
 ---
