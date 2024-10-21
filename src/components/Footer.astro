@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets'
+import { twMerge } from 'tailwind-merge'
+import MessageBubble from '../components/MessageBubble.astro'
+import avatarImageUrl from '../assets/images/avatar.png'
+---
+
+<footer
+  class={twMerge('rounded-2xl bg-stone-50 p-4 mt-8', 'dark:bg-stone-900')}
+>
+  <div class="flex items-end gap-1">
+    <Image
+      loading="eager"
+      src={avatarImageUrl}
+      alt=""
+      class={twMerge(
+        'h-8 w-8 shrink-0 translate-y-0.5 rounded-full bg-gradient-to-t from-orange-300 to-orange-200 ring-1 ring-inset ring-orange-400/25',
+        'dark:ring-orange-50/25',
+      )}
+    />
+    <ul class="flex flex-col items-start gap-px">
+      <MessageBubble>Hope these help!</MessageBubble>
+      <MessageBubble>
+        If you find any mistakes or have any thoughts on the site, do let me
+        know! All feedback is more than welcome 🫶
+      </MessageBubble>
+      <MessageBubble>
+        Just <a href="mailto:tinos.tabs@icloud.com">shoot me an email</a>
+      </MessageBubble>
+    </ul>
+  </div>
+</footer>
+
+<style>
+  footer a {
+    @apply text-blue-600 underline;
+    @apply dark:text-blue-400;
+  }
+</style>
