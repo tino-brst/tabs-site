@@ -11,6 +11,7 @@ import TunerBadge from '../components/TunerBadge.astro'
 import Footer from '../components/Footer.astro'
 
 const tabs = await getCollection('tabs')
+const tabsCount = tabs.filter(isNotDraft).length
 const tabGroups = toTabGroups(tabs)
 ---
 
@@ -192,7 +193,7 @@ const tabGroups = toTabGroups(tabs)
       'dark:text-stone-500',
     )}
   >
-    {tabs.length} tabs
+    {tabsCount} tabs
   </p>
 
   <Footer />
