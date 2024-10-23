@@ -3,12 +3,16 @@ import { Image } from 'astro:assets'
 import { twMerge } from 'tailwind-merge'
 import MessageBubble from '../components/MessageBubble.astro'
 import avatarImageUrl from '../assets/images/avatar.png'
+import ArrowUpRightIcon from './icons/ArrowUpRightIcon.astro'
 ---
 
-<footer
-  class={twMerge('rounded-2xl bg-stone-50 p-4 mt-8', 'dark:bg-stone-900')}
->
-  <div class="flex items-end gap-1">
+<footer class="mt-8 flex flex-col gap-8">
+  <div
+    class={twMerge(
+      'flex items-end gap-1 rounded-2xl bg-stone-50 p-4',
+      'dark:bg-stone-900',
+    )}
+  >
     <Image
       loading="eager"
       src={avatarImageUrl}
@@ -25,15 +29,44 @@ import avatarImageUrl from '../assets/images/avatar.png'
         know! All feedback is more than welcome 🫶
       </MessageBubble>
       <MessageBubble>
-        Just <a href="mailto:tinos.tabs@icloud.com">shoot me an email</a>
+        Just
+        <a
+          href="mailto:tinos.tabs@icloud.com"
+          class={twMerge('text-blue-600 underline', 'dark:text-blue-400')}
+        >
+          shoot me an email
+        </a>
       </MessageBubble>
     </ul>
   </div>
-</footer>
 
-<style>
-  footer a {
-    @apply text-blue-600 underline;
-    @apply dark:text-blue-400;
-  }
-</style>
+  <div class="flex flex-col items-center gap-2 self-center">
+    <a
+      target="_blank"
+      href="https://github.com/tino-brst/tabs-site"
+      class={twMerge(
+        'group flex items-center gap-0.5 rounded-full bg-stone-100 px-3 py-1 text-xs font-medium text-stone-500 transition-colors',
+        'hover:bg-stone-200/60 hover:text-stone-700',
+        'dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700 dark:hover:text-stone-100',
+      )}
+    >
+      Source available on GitHub
+      <ArrowUpRightIcon
+        class={twMerge(
+          '-mr-1 h-4 w-4 text-stone-400 transition-colors',
+          'group-hover:text-stone-500',
+          'dark:text-stone-500 dark:group-hover:text-stone-400',
+        )}
+      />
+    </a>
+
+    <p
+      class={twMerge(
+        'text-xs font-medium text-stone-400',
+        'dark:text-stone-500',
+      )}
+    >
+      made with mate & care
+    </p>
+  </div>
+</footer>
