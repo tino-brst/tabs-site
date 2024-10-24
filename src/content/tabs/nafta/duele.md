@@ -12,7 +12,7 @@ ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/nafta/duele-tabs-542764
 slug: 'duele'
 ---
 
-Magamo tends to play this one slightly different every time, but this should be a good starting point that tries to keep the sections consistent
+Magamo tends to play this one slightly different every time, but this should be a good starting point that tries to keep the sections consistent.
 
 ```
 [Intro]
