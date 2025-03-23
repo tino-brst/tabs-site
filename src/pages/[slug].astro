@@ -151,7 +151,7 @@ const { Content } = await tab.render()
     </div>
     <div class="flex gap-3 self-stretch">
       <a
-        data-disabled={!data.spotifyURL}
+        data-disabled={!data.spotifyURL ? '' : undefined}
         href={data.spotifyURL}
         target="_blank"
         class={twMerge(
@@ -180,7 +180,7 @@ const { Content } = await tab.render()
         </span>
       </a>
       <a
-        data-disabled={!data.appleMusicURL}
+        data-disabled={!data.appleMusicURL ? '' : undefined}
         href={data.appleMusicURL}
         target="_blank"
         class={twMerge(

@@ -107,7 +107,7 @@ const tabGroups = toTabGroups(tabs)
               {group.tabs.map((tab) => (
                 <li>
                   <a
-                    data-disabled={tab.data.isDraft}
+                    data-disabled={tab.data.isDraft ? '' : undefined}
                     href={tab.data.isDraft ? undefined : `/${tab.slug}`}
                     class={twMerge(
                       'group flex items-center gap-3 rounded-lg p-2 transition-colors',
