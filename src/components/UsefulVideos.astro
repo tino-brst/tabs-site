@@ -56,10 +56,10 @@ const { videos: urls, searchQuery } = Astro.props
       )}`}
       target="_blank"
       class={twMerge(
-        'flex aspect-video max-w-[75%] flex-1 shrink-0 basis-[75%] cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-stone-300 p-4 font-medium text-stone-500 shadow-[0_1px_0_theme(colors.stone.300),0_2px_2px_0_rgb(0_0_0_/_0.05)] transition-all',
+        'flex aspect-video max-w-[75%] flex-1 shrink-0 basis-[75%] cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-stone-300 p-4 font-medium text-stone-500 shadow-[0_1px_0_var(--color-stone-300),0_2px_2px_0_rgb(0_0_0/0.05)] transition-all',
         'hover:bg-stone-50',
         'active:translate-y-[1px] active:bg-stone-50 active:shadow-none',
-        'dark:border-stone-600 dark:shadow-[0_1px_0_theme(colors.stone.600)] dark:bg-stone-900 dark:text-stone-300 dark:hover:bg-stone-800 dark:active:bg-stone-800',
+        'dark:border-stone-600 dark:shadow-[0_1px_0_var(--color-stone-600)] dark:bg-stone-900 dark:text-stone-300 dark:hover:bg-stone-800 dark:active:bg-stone-800',
       )}
     >
       Search on YouTube
