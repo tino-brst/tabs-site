@@ -179,10 +179,10 @@ A|---0---0---|
 E|-----------|
 ```
 
-|     |           |
-| --- | --------- |
-| `/` | Slide up  |
-| `h` | Hammer-on |
+| Symbol | Meaning   |
+| ------ | --------- |
+| `/`    | Slide up  |
+| `h`    | Hammer-on |
 
 ## Lyrics
 

@@ -215,11 +215,11 @@ A|-----------------------------------8-----------------6------------|
 E|---6---------6--6-----------x-------------------------------------|
 ```
 
-|      |                                                                  |
-| ---- | ---------------------------------------------------------------- |
-| `h`  | Hammer-on                                                        |
-| `x`  | Muted string                                                     |
-| `()` | Notes that may not be played but complete the shape of the chord |
+| Symbol | Meaning                                                          |
+| ------ | ---------------------------------------------------------------- |
+| `h`    | Hammer-on                                                        |
+| `x`    | Muted string                                                     |
+| `()`   | Notes that may not be played but complete the shape of the chord |
 
 ## Lyrics
 

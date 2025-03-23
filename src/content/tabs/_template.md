@@ -37,16 +37,16 @@ E|----------------------------------------|
 
 ```
 
-|      |                                                                  |
-| ---- | ---------------------------------------------------------------- |
-| `/`  | Slide up                                                         |
-| `\`  | Slide down                                                       |
-| `h`  | Hammer-on                                                        |
-| `p`  | Pull-off                                                         |
-| `x`  | Muted string                                                     |
-| `↓`  | Where the voice comes in                                         |
-| `*`  | Emphasis on difference with previous sections                    |
-| `()` | Notes that may not be played but complete the shape of the chord |
+| Symbol | Meaning                                                          |
+| ------ | ---------------------------------------------------------------- |
+| `/`    | Slide up                                                         |
+| `\`    | Slide down                                                       |
+| `h`    | Hammer-on                                                        |
+| `p`    | Pull-off                                                         |
+| `x`    | Muted string                                                     |
+| `↓`    | Where the voice comes in                                         |
+| `*`    | Emphasis on difference with previous sections                    |
+| `()`   | Notes that may not be played but complete the shape of the chord |
 
 ## Lyrics
 
