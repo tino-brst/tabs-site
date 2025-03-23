@@ -354,10 +354,10 @@ E|---1-------1-------1-------1-------|---1-------1------1/3-----------------|
 
 ```
 
-|      |                                                                  |
-| ---- | ---------------------------------------------------------------- |
-| `/`  | Slide up                                                         |
-| `()` | Notes that may not be played but complete the shape of the chord |
+| Symbol | Meaning                                                          |
+| ------ | ---------------------------------------------------------------- |
+| `/`    | Slide up                                                         |
+| `()`   | Notes that may not be played but complete the shape of the chord |
 
 ## Lyrics
 
