@@ -283,6 +283,16 @@ const { Content } = await tab.render()
     @apply dark:text-stone-600;
   }
 
+  .content :global(.hljs.language-tab .hljs-string .hljs-chord-note-parens) {
+    @apply text-stone-300;
+    @apply dark:text-stone-600;
+  }
+
+  .content :global(.hljs.language-tab .hljs-string .hljs-chord-note-fret) {
+    @apply text-stone-400;
+    @apply dark:text-stone-500;
+  }
+
   .content :global(table) {
     @apply border-separate border-spacing-y-1 text-sm;
   }
