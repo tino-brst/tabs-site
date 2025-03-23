@@ -298,10 +298,14 @@ const { Content } = await tab.render()
   }
 
   .content :global(table th) {
-    @apply p-0;
+    @apply sr-only;
   }
 
   .content :global(table td) {
     @apply p-0 pr-2 align-top first:text-end last:pr-0;
+  }
+
+  .content :global(table td code) {
+    @apply inline-block w-full text-center;
   }
 </style>
