@@ -35,20 +35,38 @@ const tab: LanguageFn = () => {
   }
 
   // Each string
-  // e|---2---|---3---|
+  // e|---2---|---(3)---|
   const STRING: Mode = {
     className: 'string',
     variants: [
       {
+        // e|---2---|--(3)--|
+        // └────────────────┘
         begin: /^.{1}\|/,
         end: /\|\s/,
         contains: [
           // Dash groups
-          // e|---2---|---3---|
-          //   └─┘ └─┘ └─┘ └─┘
           {
             className: 'dash',
+            // e|---2---|--(3)--|
+            //   └─┘ └─┘ └┘   └┘
             begin: /(?:-)+/,
+          },
+          // Notes completing the chord
+          {
+            className: 'chord-note-parens',
+            // e|---2---|--(3)--|
+            //             ↑ ↑
+            begin: /\(/,
+            end: /\)/,
+            contains: [
+              {
+                className: 'chord-note-fret',
+                // e|---2---|--(3)--|
+                //              ↑
+                begin: /\d{1,2}/,
+              },
+            ],
           },
         ],
       },
