@@ -16,22 +16,22 @@ const { class: className } = Astro.props
 <div
   class={twMerge(
     'group relative pl-[6px] overflow-clip',
-    '[--bubble-color:theme(colors.stone.200)] [--background-color:theme(colors.stone.50)]',
-    'dark:[--bubble-color:theme(colors.stone.700)] dark:[--background-color:theme(colors.stone.900)]',
+    '[--bubble-color:var(--color-stone-200)] [--background-color:var(--color-stone-50)]',
+    'dark:[--bubble-color:var(--color-stone-700)] dark:[--background-color:var(--color-stone-900)]',
     className,
   )}
 >
   <div
     class={twMerge(
       'absolute -left-[10px] bottom-0 hidden h-[18px] w-[26px] overflow-clip group-last:block',
-      "before:absolute before:bottom-0 before:left-0 before:h-[26px] before:w-[26px] before:rounded-b-[13px] before:bg-[--bubble-color] before:content-['']",
-      "after:absolute after:bottom-0 after:left-0 after:h-[26px] after:w-[16px] after:rounded-br-[8px] after:bg-[--background-color] after:content-['']",
+      "before:absolute before:bottom-0 before:left-0 before:h-[26px] before:w-[26px] before:rounded-b-[13px] before:bg-(--bubble-color) before:content-['']",
+      "after:absolute after:bottom-0 after:left-0 after:h-[26px] after:w-[16px] after:rounded-br-[8px] after:bg-(--background-color) after:content-['']",
     )}
   >
   </div>
   <p
     class={twMerge(
-      'max-w-[288px] rounded-[18px] bg-[--bubble-color] px-3 py-2 leading-tight text-black',
+      'max-w-[288px] rounded-[18px] bg-(--bubble-color) px-3 py-2 leading-tight text-black',
       'dark:text-white',
     )}
   >

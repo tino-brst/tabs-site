@@ -61,8 +61,8 @@ const tabGroups = toTabGroups(tabs)
           >
             <div
               class={twMerge(
-                'sticky top-0 z-10 flex items-center justify-between gap-3 bg-stone-50/90 px-4 py-3 shadow-[inset_0_-1px_0_theme(colors.stone.50/50%)] backdrop-blur-md backdrop-saturate-200',
-                'dark:bg-stone-900/80 dark:shadow-[inset_0_-1px_0_theme(colors.stone.900/50%)]',
+                'sticky top-0 z-10 flex items-center justify-between gap-3 bg-stone-50/90 px-4 py-3 shadow-[inset_0_-1px_0_--theme(--color-stone-50/50%)] backdrop-blur-md backdrop-saturate-200',
+                'dark:bg-stone-900/80 dark:shadow-[inset_0_-1px_0_--theme(--color-stone-900/50%)]',
               )}
             >
               <div class="flex flex-col overflow-clip">
@@ -113,15 +113,15 @@ const tabGroups = toTabGroups(tabs)
                       'group flex items-center gap-3 rounded-lg p-2 transition-colors',
                       'hover:bg-stone-100',
                       'dark:hover:bg-stone-800',
-                      'data-[disabled]:pointer-events-none',
+                      'data-disabled:pointer-events-none',
                     )}
                   >
                     <div
                       class={twMerge(
-                        'relative flex h-10 w-10 shrink-0 items-center justify-center rounded bg-stone-100',
+                        'relative flex h-10 w-10 shrink-0 items-center justify-center rounded-sm bg-stone-100',
                         "after:absolute after:inset-0 after:rounded-[inherit] after:ring-1 after:ring-inset after:ring-black/10 after:transition-colors after:content-[''] group-hover:after:bg-black/5",
                         'dark:bg-stone-800 dark:after:ring-white/10',
-                        'group-data-[disabled]:opacity-50',
+                        'group-data-disabled:opacity-50',
                       )}
                     >
                       <MusicNoteIcon
@@ -144,7 +144,7 @@ const tabGroups = toTabGroups(tabs)
                         <div
                           class={twMerge(
                             'truncate leading-snug',
-                            'group-data-[disabled]:opacity-50',
+                            'group-data-disabled:opacity-50',
                           )}
                         >
                           {tab.data.title}
@@ -163,7 +163,7 @@ const tabGroups = toTabGroups(tabs)
                         {tab.data.tuning !== 'Standard' && <TunerBadge />}
                         {tab.data.capo && <CapoBadge />}
                         {tab.data.isNew && (
-                          <div class="rounded-full bg-gradient-to-t from-blue-500 to-blue-400 px-2 py-0.5 text-[0.625rem] font-semibold uppercase text-white">
+                          <div class="rounded-full bg-linear-to-t from-blue-500 to-blue-400 px-2 py-0.5 text-[0.625rem] font-semibold uppercase text-white">
                             New
                           </div>
                         )}
@@ -172,7 +172,7 @@ const tabGroups = toTabGroups(tabs)
                         class={twMerge(
                           'truncate text-sm leading-snug text-stone-500',
                           'dark:text-stone-400',
-                          'group-data-[disabled]:opacity-50',
+                          'group-data-disabled:opacity-50',
                         )}
                       >
                         {tab.data.album}

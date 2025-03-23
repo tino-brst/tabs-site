@@ -1,16 +1,17 @@
 import { defineConfig } from 'astro/config'
 import react from '@astrojs/react'
-import tailwind from '@astrojs/tailwind'
 import mdx from '@astrojs/mdx'
 import vercel from '@astrojs/vercel'
 import rehypeHighlight from 'rehype-highlight'
 import { tab } from './src/lib/tab'
 
+import tailwindcss from '@tailwindcss/vite'
+
 // Config file docs
 // https://docs.astro.build/en/guides/configuring-astro/#the-astro-config-file
 
 export default defineConfig({
-  integrations: [react(), tailwind(), mdx()],
+  integrations: [react(), mdx()],
   markdown: {
     // Disables default shiki-based syntax highlighting
     syntaxHighlight: false,
@@ -36,4 +37,7 @@ export default defineConfig({
       enabled: true,
     },
   }),
+  vite: {
+    plugins: [tailwindcss()],
+  },
 })
