@@ -35,12 +35,12 @@ const tab: LanguageFn = () => {
   }
 
   // Each string
-  // e|---2---|---(3)---|
+  // E|---2---|---(3)---|
   const STRING: Mode = {
     className: 'string',
     variants: [
       {
-        // e|---2---|--(3)--|
+        // E|---2---|--(3)--|
         // └────────────────┘
         begin: /^(?=[A-Ga-g]#?\|)/,
         end: /\|\s/,
@@ -48,28 +48,28 @@ const tab: LanguageFn = () => {
           // Tuning (e.g. E, D, C#, etc)
           {
             className: 'tuning',
-            // e|---2---|--(3)--|
+            // E|---2---|--(3)--|
             // ↑
             begin: /[A-Ga-g]#?/,
           },
           // Dash groups
           {
             className: 'dash',
-            // e|---2---|--(3)--|
+            // E|---2---|--(3)--|
             //   └─┘ └─┘ └┘   └┘
             begin: /(?:-)+/,
           },
           // Notes completing the chord
           {
             className: 'chord-note-parens',
-            // e|---2---|--(3)--|
+            // E|---2---|--(3)--|
             //             ↑ ↑
             begin: /\(/,
             end: /\)/,
             contains: [
               {
                 className: 'chord-note-fret',
-                // e|---2---|--(3)--|
+                // E|---2---|--(3)--|
                 //              ↑
                 begin: /\d{1,2}/,
               },
