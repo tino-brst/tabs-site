@@ -42,7 +42,7 @@ const tab: LanguageFn = () => {
       {
         // e|---2---|--(3)--|
         // └────────────────┘
-        begin: /^.{1}\|/,
+        begin: /^[A-Ga-g]#?\|/,
         end: /\|\s/,
         contains: [
           // Dash groups
