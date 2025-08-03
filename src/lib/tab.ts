@@ -42,9 +42,16 @@ const tab: LanguageFn = () => {
       {
         // e|---2---|--(3)--|
         // └────────────────┘
-        begin: /^[A-Ga-g]#?\|/,
+        begin: /^(?=[A-Ga-g]#?\|)/,
         end: /\|\s/,
         contains: [
+          // Tuning (e.g. E, D, C#, etc)
+          {
+            className: 'tuning',
+            // e|---2---|--(3)--|
+            // ↑
+            begin: /[A-Ga-g]#?/,
+          },
           // Dash groups
           {
             className: 'dash',
