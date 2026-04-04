@@ -50,19 +50,19 @@ E|----------------------------------------|
 
 ## Lyrics
 
-`[Verse]`
-Once upon a time
-Potato potato potato
+`[Verse]`  
+Once upon a time  
+Potato potato potato  
 Banana
 
-`[Chorus]`
-Let it go
-Let it go
+`[Chorus]`  
+Let it go  
+Let it go  
 Let it go
 
 `[Instrumental]`
 
-`[Verse]`
-Once upon a time
-Potato potato potato
+`[Verse]`  
+Once upon a time  
+Potato potato potato  
 Banana
