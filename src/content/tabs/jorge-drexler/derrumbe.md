@@ -49,19 +49,35 @@ E|----------------------------------------|
 
 ## Lyrics
 
-`[Verse]`  
-Once upon a time  
-Potato potato potato  
-Banana
+`[Verse 1]`  
+Sacaste apenas un naipe  
+Pero era el que sostenía el castillo  
+Nuestro amor cedió por las costuras  
+Y se abrió la soldadura en los anillos
+
+`[Verse 2]`  
+Quedamos a la intemperie  
+Sin un "tal vez" que nos resguardara  
+No quedó ni una primavera  
+Que de golpe no se hubiera vuelto cara
 
 `[Chorus]`  
-Let it go  
-Let it go  
-Let it go
+Las cartas caían, el tiempo sangraba  
+Y toda estructura de toda poesía  
+Se desmoronaba
+La casa era endeble, el techo se hunde  
+Y tú y yo abrazados, salvando los muebles  
+En pleno derrumbe
 
-`[Instrumental]`
+`[Post-Chorus]`  
+Cae la mesa, caen las sillas  
+Cae la cama y se hace astillas  
+Caen los cuadros, los floreros  
+Los zapatos, los platos, percheros  
+Caen fotos, controles remotos, cuadernos  
+La ropa de invierno, los hijos, los besos, los cuernos  
+Cepillos de dientes, los planes pendientes
 
-`[Verse]`  
-Once upon a time  
-Potato potato potato  
-Banana
+`[Outro]`  
+Sacaste apenas un naipe  
+Pero era el que sostenía el castillo
