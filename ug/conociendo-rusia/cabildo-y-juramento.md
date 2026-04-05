@@ -1,3 +1,10 @@
+```
+Artist: Conociendo Rusia
+Song: Cabildo y Juramento
+Tuning: Standard
+Capo: None
+```
+
 Video References
 
 - Live on Perros de la Calle https://www.youtube.com/watch?v=Jp61xnO49Bo&t=660s

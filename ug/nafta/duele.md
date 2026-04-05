@@ -1,3 +1,10 @@
+```
+Artist: Nafta
+Song: Duele
+Tuning: Standard
+Capo: None
+```
+
 Video References
 
 - Live on Futurock https://www.youtube.com/watch?v=aJ2MunexcGI
