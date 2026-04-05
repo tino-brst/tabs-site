@@ -2,6 +2,7 @@
 Artist: Billie Marten
 Song: Feeling
 Tuning: C#F#C#G#C#D#
+Capo: None
 ```
 
 Video References
