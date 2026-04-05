@@ -9,7 +9,9 @@ Video References
 
 - TODO Live at Some Place https://www.youtube.com/watch?v=jgHkXILe_IU
 
+
 If you find any mistakes or missing bits, do let me know! Leave a comment down below and I'll look into it.
+
 
 [Intro]
 
@@ -86,12 +88,14 @@ D|---4---2h4---6---6---6-----6---4h6---4---4---4-----4---|
 A|---4---4-----4---4---4-----6---6-----2---2---2-----4---|
 E|---2---2-------------------4---4-------------------2---|
 
+
 **********************************************************************
 
 | h   Hammer-on
 | ()  Notes that may not be played but complete the shape of the chord
 
 **********************************************************************
+
 
 Lyrics
 
