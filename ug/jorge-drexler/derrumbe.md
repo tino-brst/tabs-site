@@ -1,15 +1,9 @@
----
-title: 'Derrumbe'
-tuning: 'Standard'
-album: 'Derrumbe'
-artist: 'Jorge Drexler'
-albumImageURL: '../../../assets/images/albums/derrumbe.jpg'
-artistImageURL: '../../../assets/images/artists/jorge-drexler.jpg'
-spotifyURL: 'https://open.spotify.com/track/1XeYBsNR22CI5AMEqgmkm3?si=206bb91cf164460a'
-appleMusicURL: 'https://music.apple.com/album/derrumbe/1728917150?i=1728917153'
-videos: ['jgHkXILe_IU']
-slug: 'derrumbe'
----
+```
+Artist: Jorge Drexler
+Song: Derrumbe
+Tuning: Standard
+Capo: None
+```
 
 ```
 [Intro]
