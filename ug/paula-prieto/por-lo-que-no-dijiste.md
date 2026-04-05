@@ -2,6 +2,7 @@
 Artist: Paula Prieto
 Song: Por Lo Que No Dijiste
 Tuning: Standard
+Capo: 2nd fret
 ```
 
 Video References
