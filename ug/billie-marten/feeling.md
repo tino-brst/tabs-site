@@ -1,4 +1,8 @@
+```
+Artist: Billie Marten
+Song: Feeling
 Tuning: C#F#C#G#C#D#
+```
 
 Video References
 
