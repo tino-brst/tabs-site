@@ -14,7 +14,7 @@ The document should always follow this order:
 6. Legend
 7. Lyrics
 
-## 1. Metadata codeblock
+### 1. Metadata codeblock
 
 Always present at the top of the file, inside a fenced code block:
 
@@ -25,7 +25,7 @@ Tuning: Standard
 Capo: None
 ```
 
-## 2. Video References
+### 2. Video References
 
 Always present. Each entry is a labeled link describing the performance context:
 
@@ -36,7 +36,7 @@ Video References
 - Live at Studio J Sessions https://www.youtube.com/watch?v=KBZuAaxEJxM
 ```
 
-## 3. Author notes
+### 3. Author notes
 
 Free-form playing tips or context, included only if the source tab has them. Placed before the disclaimer.
 
@@ -46,7 +46,7 @@ there are a few spots where one would be tempted to use hammer-ons, but they are
 in-sync with the strums.
 ```
 
-## 4. Disclaimer
+### 4. Disclaimer
 
 Always present. The format depends on whether author notes are included:
 
@@ -62,9 +62,9 @@ PS As usual, if you find any mistakes or missing bits, do let me know! Leave a c
 If you find any mistakes or missing bits, do let me know! Leave a comment down below and I'll look into it.
 ```
 
-## 5. Tab sections
+### 5. Tab sections
 
-### Section order
+#### Section order
 
 Each section follows this order:
 
@@ -74,7 +74,7 @@ Each section follows this order:
 4. Lyric quote
 5. Tab
 
-### Section headers
+#### Section headers
 
 Use square brackets: `[Intro]`, `[Verse 1]`, `[Pre-Chorus]`, `[Chorus 1]`, `[Post-Chorus]`, `[Bridge]`, `[Instrumental]`, `[Outro]`.
 
@@ -82,7 +82,7 @@ Number sections only when there are multiple of the same type. Section names and
 
 Always use `[Outro]` (not `[Ending]`).
 
-### Inline lyrics
+#### Inline lyrics
 
 Always quote the full first line of the section's lyrics (matching the Lyrics section at the bottom), in double quotes with `...` at the end:
 
@@ -90,7 +90,7 @@ Always quote the full first line of the section's lyrics (matching the Lyrics se
 "Sacaste apenas un naipe ..."
 ```
 
-### Repeating sections
+#### Repeating sections
 
 Always write out the tab for every section, even when identical to a previous one. Add a parenthetical note in the header and/or a descriptive comment to signal that sections are the same:
 
@@ -103,7 +103,7 @@ e|---5---------------------------------|
 ...
 ```
 
-### Repeat notation
+#### Repeat notation
 
 There are two types of repeats:
 
@@ -130,7 +130,7 @@ E|---1-------|---1-------|
            x2|
 ```
 
-### Arrow annotations
+#### Arrow annotations
 
 Use `↑` or `↓` arrows to point to specific notes, with explanatory text nearby. Use whichever direction makes sense to point at the note:
 
@@ -146,7 +146,7 @@ e|-------------------0---------------|
 B|--(1)--1-----------1---------1-----|
 ```
 
-## 6. Legend
+### 6. Legend
 
 Placed after the last tab section. Only include symbols that are actually used in the tab.
 
@@ -164,7 +164,7 @@ Use `****` borders with blank lines between borders and content:
 
 The `()` symbol (notes that complete the chord shape but may not be played) is treated as any other symbol — only include it in the legend when used.
 
-## 7. Lyrics
+### 7. Lyrics
 
 Always present at the bottom, after the legend. Section headers match the tab sections:
 
@@ -182,3 +182,15 @@ Las cartas caían, el tiempo sangraba
 Y toda estructura de toda poesía
 Se desmoronaba
 ```
+
+## Whitespace rules
+
+Use **2 blank lines** to separate top-level document sections from each other. Specifically:
+
+- 2 blank lines between Video References and Disclaimer
+- 2 blank lines between Disclaimer and first tab section
+- 2 blank lines between tab sections (before each `[Section]` header)
+- 2 blank lines before the legend `****` border
+- 2 blank lines after the legend `****` border (before Lyrics)
+
+Use **1 blank line** for spacing within sections (e.g., between a section header and its lyric quote, between a lyric quote and tab lines, between legend borders and legend content).
