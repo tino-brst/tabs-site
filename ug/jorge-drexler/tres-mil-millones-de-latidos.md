@@ -1,3 +1,10 @@
+```
+Artist: Jorge Drexler
+Song: Tres Mil Millones de Latidos
+Tuning: Standard
+Capo: None
+```
+
 Video References
 
 - Live in Bogota, 2012: https://www.youtube.com/watch?v=aguS_1cgrkc

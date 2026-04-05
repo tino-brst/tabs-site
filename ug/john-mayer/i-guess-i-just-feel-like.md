@@ -1,3 +1,10 @@
+```
+Artist: John Mayer
+Song: I Guess I Just Feel Like
+Tuning: Standard
+Capo: 2nd fret
+```
+
 Video References
 
 - Dedication to Dustin https://www.youtube.com/watch?v=HNaR5f4Uy00

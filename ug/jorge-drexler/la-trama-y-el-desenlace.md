@@ -1,3 +1,10 @@
+```
+Artist: Jorge Drexler
+Song: La Trama y el Desenlace
+Tuning: Standard
+Capo: None
+```
+
 Video References
  
 - Live in La Sexta: https://www.youtube.com/watch?v=w7ooq2YWvTA

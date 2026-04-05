@@ -1,3 +1,10 @@
+```
+Artist: Jorge Drexler
+Song: Sanar
+Tuning: Standard
+Capo: None
+```
+
 Video References
 
 - Live in Cholula Puebla: https://www.youtube.com/watch?v=2CbEEJt7CK0

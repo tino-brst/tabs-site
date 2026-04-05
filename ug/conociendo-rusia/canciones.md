@@ -1,3 +1,10 @@
+```
+Artist: Conociendo Rusia
+Song: Canciones
+Tuning: Standard
+Capo: 2nd fret
+```
+
 Video References
 
 - Billboard snippet https://www.instagram.com/reel/C6M1ABrrQsY
