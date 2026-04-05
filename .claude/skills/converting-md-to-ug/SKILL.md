@@ -100,6 +100,10 @@ Remove the markdown table format (`| Symbol | Meaning |` and its rows) and repla
 
 Place it after the last tab section and before the Lyrics section. Only include symbols that were in the source tab's legend.
 
+#### 7. `add white space`
+
+Apply the whitespace rules from [the personal conventions reference](references/ug-personal-conventions.md).
+
 ## Reference files
 
 - [ug-tab-guide.md](references/ug-tab-guide.md) — official UG formatting rules
