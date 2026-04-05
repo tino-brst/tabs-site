@@ -361,7 +361,28 @@ repeat as necessary
 
 For effects in the tab use only the symbols from the tab legend. Symbols for effects that should be used within the tab are as follows:
 
-[List of symbols]
+| Symbol           | Technique                                 |
+| ---------------- | ----------------------------------------- |
+| `x`              | Dead note                                 |
+| `g`              | Grace note                                |
+| `(n)`            | Ghost note                                |
+| `+`              | Natural harmonic                          |
+| `AH, TH, SH, PH` | Artificial, Tapped, Semi, Pinch harmonic  |
+| `h`              | Hammer on                                 |
+| `p`              | Pull off                                  |
+| `>`              | Accented note                             |
+| `t`              | Tapping                                   |
+| `s`              | Slap                                      |
+| `p`              | Pop                                       |
+| `b`              | Bend                                      |
+| `r`              | Release                                   |
+| `br`             | Bend & Release                            |
+| `pb`             | Pre-Bend                                  |
+| `pbr`            | Pre-Bend & Release                        |
+| `/`              | Slide into from below or out of upwards   |
+| `\`              | Slide into from above or out of downwards |
+| `~`              | Vibrato                                   |
+| `tr`             | Trill                                     |
 
 #### B. Using the notations
 
