@@ -7,7 +7,7 @@ Capo: None
 
 Video References
 
-- TODO Live at Some Place https://www.youtube.com/watch?v=jgHkXILe_IU
+- Live at Teatro Lope de Vega https://www.youtube.com/watch?v=jgHkXILe_IU
 
 
 If you find any mistakes or missing bits, do let me know! Leave a comment down below and I'll look into it.
