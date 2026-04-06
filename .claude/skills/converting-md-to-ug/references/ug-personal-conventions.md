@@ -53,13 +53,15 @@ Always present. The format depends on whether author notes are included:
 **With author notes:**
 
 ```
-PS As usual, if you find any mistakes or missing bits, do let me know! Leave a comment down below and I'll look into it.
+PS As usual, if you find any mistakes or missing bits, do let me know! Leave a
+comment down below and I'll look into it.
 ```
 
 **Without author notes:**
 
 ```
-If you find any mistakes or missing bits, do let me know! Leave a comment down below and I'll look into it.
+As usual, if you find any mistakes or missing bits, do let me know! Leave a
+comment down below and I'll look into it.
 ```
 
 ### 5. Tab sections

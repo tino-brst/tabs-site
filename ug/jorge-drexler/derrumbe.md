@@ -16,7 +16,8 @@ etc), sometimes skipping them, sometimes not, sometimes ending on a different
 note, and so on. Play around with them, this tab is based on the video
 reference, but is just one of the many ways Jorge plays them.
 
-PS As usual, if you find any mistakes or missing bits, do let me know! Leave a comment down below and I'll look into it.
+PS As usual, if you find any mistakes or missing bits, do let me know! Leave a
+comment down below and I'll look into it.
 
 
 [Intro]
