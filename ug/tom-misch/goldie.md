@@ -13,7 +13,6 @@ Video References
 As usual, if you find any mistakes or missing bits, do let me know! Leave a
 comment down below and I'll look into it.
 
-```
 [Intro]
 
 e|---0---0---0---0---0---0---0---|
@@ -154,8 +153,6 @@ G|---0---2---2---4---2---4---2---| x8
 D|---2---2---0---0---0---0---0---|
 A|---2---0-----------------------|
 E|---0-------2---3---2---3---2---|
-
-```
 
 Lyrics
 
