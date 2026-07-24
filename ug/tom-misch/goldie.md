@@ -10,8 +10,10 @@ Video References
 - TODO Live at Some Place https://www.youtube.com/watch?v=X5Qb4qtbm7E&t=1572s
 - TODO Live at Some Place https://www.youtube.com/watch?v=jDdeLxyJEnQ
 
+
 As usual, if you find any mistakes or missing bits, do let me know! Leave a
 comment down below and I'll look into it.
+
 
 [Intro]
 
@@ -38,6 +40,7 @@ E|---5---7---2---3---2---3---2---|
                  ↑
             On the last run, hold this chord before
             continuing on to the chorus
+
 
 [Chorus 1]
 
@@ -98,6 +101,7 @@ E|---5---7---2---3---2---3---2---|
             Once again, on the last run, hold this chord before
             continuing on to the chorus
 
+
 [Chorus 2]
 
 "Goldie, when you smile it's like the world is mine"
@@ -153,6 +157,7 @@ G|---0---2---2---4---2---4---2---| x8
 D|---2---2---0---0---0---0---0---|
 A|---2---0-----------------------|
 E|---0-------2---3---2---3---2---|
+
 
 Lyrics
 
