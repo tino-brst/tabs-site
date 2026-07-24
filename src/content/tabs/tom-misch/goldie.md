@@ -7,7 +7,7 @@ albumImageURL: '../../../assets/images/albums/full-circle.jpg'
 artistImageURL: '../../../assets/images/artists/tom-misch.jpg'
 appleMusicURL: 'https://music.apple.com/album/goldie/1868437787?i=1868438030'
 spotifyURL: 'https://open.spotify.com/track/4YebOXeIkn4sWHGUlbwvzI'
-videos: ['dQw4w9WgXcQ']
+videos: ['X5Qb4qtbm7E?start=1572', 'jDdeLxyJEnQ']
 # ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/john-doe/foo-123123'
 # isNew: true
 slug: 'goldie'
