@@ -63,7 +63,7 @@ I can't explain
 `[Chorus 1]`  
 Goldie, when you smile it's like the world is mine  
 Goldie, I'll remember till the end of time  
-You know better than I know myself  
+You know me better than I know myself  
 Goldie
 
 `[Verse 2]`  
