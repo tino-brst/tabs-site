@@ -60,7 +60,7 @@ How to live like I should when I'm sick of running
 You changed me  
 I can't explain
 
-`[Chorus]`  
+`[Chorus 1]`  
 Goldie, when you smile it's like the world is mine  
 Goldie, I'll remember till the end of time  
 You know better than I know myself  
@@ -72,7 +72,7 @@ You look to me and you look outside
 Started to think that you didn't exist  
 Who the hеll do I thank for this
 
-`[Chorus]`  
+`[Chorus 2]`  
 Goldie when you smile it's likе the world is mine  
 Goldie I'll remember till the end of time  
 Goldie  
