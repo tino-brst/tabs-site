@@ -50,6 +50,8 @@ E|----------------------------------------|
 
 ## Lyrics
 
+`[Intro]`
+
 `[Verse 1]`  
 You lit me up and you pulled me out  
 Out of some hell, I was lost and you showed me how  
@@ -77,3 +79,5 @@ Goldie
 Goldie  
 You know me better than I know myself  
 Goldie
+
+`[Outro]`
