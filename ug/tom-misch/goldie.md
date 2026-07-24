@@ -157,34 +157,34 @@ E|---0-------2---3---2---3---2---|
 
 ```
 
-## Lyrics
+Lyrics
 
-`[Intro]`
+[Intro]
 
-`[Verse 1]`  
-You lit me up and you pulled me out  
-Out of some hell, I was lost and you showed me how  
-How to make something out of nothing  
-How to live like I should when I'm sick of running  
-You changed me  
+[Verse 1]
+You lit me up and you pulled me out
+Out of some hell, I was lost and you showed me how
+How to make something out of nothing
+How to live like I should when I'm sick of running
+You changed me
 I can't explain
 
-`[Chorus 1]`  
-Goldie, when you smile it's like the world is mine  
-Goldie, I'll remember till the end of time  
-You know me better than I know myself  
+[Chorus 1]
+Goldie, when you smile it's like the world is mine
+Goldie, I'll remember till the end of time
+You know me better than I know myself
 Goldie
 
-`[Verse 2]`  
-The river is yours and the river is mine  
-You look to me and you look outside  
-Started to think that you didn't exist  
+[Verse 2]
+The river is yours and the river is mine
+You look to me and you look outside
+Started to think that you didn't exist
 Who the hеll do I thank for this
 
-`[Chorus 2]`  
-Goldie when you smile it's likе the world is mine  
-Goldie I'll remember till the end of time  
-Goldie  
-Goldie  
-You know me better than I know myself  
+[Chorus 2]
+Goldie when you smile it's likе the world is mine
+Goldie I'll remember till the end of time
+Goldie
+Goldie
+You know me better than I know myself
 Goldie
