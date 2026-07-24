@@ -79,5 +79,3 @@ Goldie
 Goldie  
 You know me better than I know myself  
 Goldie
-
-`[Outro]`
