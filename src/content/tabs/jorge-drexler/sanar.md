@@ -9,7 +9,6 @@ spotifyURL: 'https://spotify.link/wB73lx9z5Db'
 appleMusicURL: 'https://music.apple.com/album/sanar/197238915?i=197240964&l'
 videos: ['2CbEEJt7CK0', 'xrPEB3ASbDI?start=1350']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/jorge-drexler/sanar-tabs-4067554'
-slug: 'sanar'
 ---
 
 ```

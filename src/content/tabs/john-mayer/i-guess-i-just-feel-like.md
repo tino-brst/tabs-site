@@ -10,7 +10,6 @@ spotifyURL: 'https://open.spotify.com/track/4Im6GRj17qa7NW76OsJh1s?si=8401204bd4
 appleMusicURL: 'https://music.apple.com/album/i-guess-i-just-feel-like/1578974375?i=1578974717'
 videos: ['HNaR5f4Uy00', 'KKgoF64zVRk']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/john-mayer/i-guess-i-just-feel-like-tabs-5143339'
-slug: 'i-guess-i-just-feel-like'
 ---
 
 Once you get the `[Intro]` down, you're pretty much almost there, it's reused quite a bit. In that section, there are a few spots where one would be tempted to use hammer-ons, but they are just well-timed chord changes in-sync with the strums. To make things a bit more colorful, John changes the accents on the strumming and skips/adds hammer-ons here and there, check the videos for reference.

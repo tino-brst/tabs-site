@@ -9,7 +9,6 @@ spotifyURL: 'https://open.spotify.com/track/392fECmnYZTQjL97hqEElg?si=c86d2b25ea
 appleMusicURL: 'https://music.apple.com/album/loco-en-el-desierto/1437197456?i=1437197459'
 videos: ['Jp61xnO49Bo?start=318', 'vHvI2vPrBK4?start=1389']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/conociendo-rusia/loco-en-el-desierto-tabs-5088304'
-slug: 'loco-en-el-desierto'
 ---
 
 ```

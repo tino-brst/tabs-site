@@ -9,7 +9,6 @@ spotifyURL: 'https://spotify.link/d3pBz2zO4Db'
 appleMusicURL: 'https://music.apple.com/album/queen-of-california/516701586?i=516701712&l'
 videos: ['uJpvUTDB4Ps']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/john-mayer/shadow-days-tabs-1178389'
-slug: 'shadow-days'
 ---
 
 The technique used to play each chord is the same as the one used in **Neon** (also by John), the parts that are played differently are tabbed-out.

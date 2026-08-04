@@ -10,7 +10,6 @@ spotifyURL: 'https://spotify.link/pAfHYA3z5Db'
 appleMusicURL: 'https://music.apple.com/album/singing-from-the-windows/1667688037?i=1667689018&l'
 videos: ['hRfiWzUsBGw']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/dave-matthews/singing-from-the-windows-tabs-3080054'
-slug: 'singing-from-the-windows'
 ---
 
 Dave tends to add color 🎨 to the chords with subtle strums or picking patterns, changing from section to section. To keep the tab simple, all those little variations are not included, but check the video for a good reference on those.

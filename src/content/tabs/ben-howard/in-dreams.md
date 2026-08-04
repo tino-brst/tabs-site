@@ -9,7 +9,6 @@ spotifyURL: 'https://spotify.link/2XFdybYz5Db'
 appleMusicURL: 'https://music.apple.com/album/in-dreams/1440821129?i=1440821138&l'
 videos: ['RWPMay0tPx4']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/ben-howard/in-dreams-tabs-1680648'
-slug: 'in-dreams'
 ---
 
 The tab details how to play the first appearance of each section of the song. The three dots (`...`) represent parts of the song that use things previously explained. Once a section is learned, it should be relatively easy to notice whenever it's being used again.

@@ -9,7 +9,6 @@ spotifyURL: 'https://open.spotify.com/track/1XeYBsNR22CI5AMEqgmkm3?si=206bb91cf1
 appleMusicURL: 'https://music.apple.com/album/derrumbe/1728917150?i=1728917153'
 videos: ['jgHkXILe_IU']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/jorge-drexler/derrumbe-tabs-6230582'
-slug: 'derrumbe'
 ---
 
 Even though the verses use all the same chords, Jorge plays around with the

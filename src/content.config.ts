@@ -3,7 +3,15 @@ import { defineCollection } from 'astro:content'
 import { glob } from 'astro/loaders'
 
 const tabs = defineCollection({
-  loader: glob({ pattern: '**/[^_]*.md', base: './src/content/tabs' }),
+  loader: glob({
+    pattern: '**/[^_]*.md',
+    base: './src/content/tabs',
+    // The default ids come from the base path + folder + filename
+    // (.../tabs/[artist]/[song].md → id: [artist]/[song]). If we wanna keep the
+    // routes flat, which come from pages/[id].astro, we need to extract the
+    // filename so we get id: [song] and thus the routes: /[song].
+    generateId: ({ entry }) => entry.split('/').pop()!.replace(/\.md$/, ''),
+  }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),

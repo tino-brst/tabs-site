@@ -10,7 +10,6 @@ artist: 'John Doe'
 # appleMusicURL: 'https://music.apple.com/album/...'
 videos: ['dQw4w9WgXcQ']
 # ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/john-doe/foo-123123'
-slug: 'foo'
 ---
 
 ```

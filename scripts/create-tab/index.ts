@@ -313,7 +313,6 @@ async function main() {
     `videos: ['dQw4w9WgXcQ']`,
     `# ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/john-doe/foo-123123'`,
     `# isNew: true`,
-    `slug: '${songSlug}'`,
   ].join('\n')
 
   const template = await readFile(join(__dirname, 'template.md'), {
