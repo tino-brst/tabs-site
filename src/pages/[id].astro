@@ -1,6 +1,6 @@
 ---
 import type { InferGetStaticPropsType, GetStaticPaths } from 'astro'
-import { getCollection } from 'astro:content'
+import { getCollection, render } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
 import { Image } from 'astro:assets'
 import UsefulVideos from '../components/UsefulVideos.astro'
@@ -15,16 +15,17 @@ export const getStaticPaths = (async () => {
   const tabs = await getCollection('tabs')
 
   return tabs.map((tab) => ({
-    params: { slug: tab.slug },
+    params: { id: tab.id },
     props: tab,
   }))
 }) satisfies GetStaticPaths
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>
 
+// TODO do we still need the inferred Props type and casting?
 const tab = Astro.props as Props
 const data = tab.data
-const { Content } = await tab.render()
+const { Content } = await render(tab)
 ---
 
 <Layout

@@ -1,8 +1,9 @@
 import { z } from 'astro/zod'
 import { defineCollection } from 'astro:content'
+import { glob } from 'astro/loaders'
 
 const tabs = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/[^_]*.md', base: './src/content/tabs' }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
