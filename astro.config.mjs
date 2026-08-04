@@ -10,6 +10,9 @@ import tailwindcss from '@tailwindcss/vite'
 // https://docs.astro.build/en/guides/configuring-astro/#the-astro-config-file
 
 export default defineConfig({
+  prefetch: {
+    prefetchAll: true,
+  },
   markdown: {
     // Disables default shiki-based syntax highlighting
     syntaxHighlight: false,
