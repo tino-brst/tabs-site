@@ -9,7 +9,6 @@ spotifyURL: 'https://spotify.link/sX0pbnm52Db'
 appleMusicURL: 'https://music.apple.com/album/dear-marie/672720304?i=672720308&l'
 videos: ['eZHBH1MoT3g', '4oKYnjCRtnY']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/john-mayer/dear-marie-tabs-1414326'
-slug: 'dear-marie'
 ---
 
 The technique used to play each chord is the same as the one used in **Stop This Train** (also by John), the parts that are played differently are tabbed-out.

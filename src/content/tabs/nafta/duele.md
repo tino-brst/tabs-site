@@ -9,7 +9,6 @@ spotifyURL: 'https://open.spotify.com/track/3QsmZtbdKo05hK6VVAjUXd?si=0178ffa8ce
 appleMusicURL: 'https://music.apple.com/album/duele/1695904376?i=1695904384'
 videos: ['aJ2MunexcGI', 'NATmb6vGCFc?start=833']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/nafta/duele-tabs-5427648'
-slug: 'duele'
 ---
 
 Magamo tends to play this one slightly different every time, but this should be a good starting point that tries to keep the sections consistent.

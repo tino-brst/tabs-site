@@ -9,7 +9,6 @@ spotifyURL: 'https://open.spotify.com/track/59S8JfBTZo1jZhwCgwzEYz?si=vfCs9SONQb
 appleMusicURL: 'https://music.apple.com/album/feeling/1796240052?i=1796240057'
 videos: ['KBZuAaxEJxM', 'PDruYJI5p6M?start=231']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/billie-marten/feeling-tabs-5900682'
-slug: 'feeling'
 ---
 
 ```

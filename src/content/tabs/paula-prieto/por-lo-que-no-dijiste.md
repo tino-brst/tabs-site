@@ -10,7 +10,6 @@ spotifyURL: 'https://open.spotify.com/track/2KsZbiW7spEsptoiKOVuo8?si=12964a6f49
 appleMusicURL: 'https://music.apple.com/album/por-lo-que-no-dijiste-dec-17-2021-at-7-34-pm-apr-12-4-17pm/1623288371?i=1623288381'
 videos: ['ThhPDgzJcaM']
 ultimateGuitarURL: 'https://tabs.ultimate-guitar.com/tab/paula-prieto/por-lo-que-no-dijiste-tabs-5471352'
-slug: 'por-lo-que-no-dijiste'
 ---
 
 Even though there aren't _that_ many chords on this one, the picking pattern and moments in which Pau does the chord-changes vary slightly from section to section, making this one (for completeness sake) a pretty long tab. I'd start off by just learning the main pattern (which you can see in the intro) and use it throughout, and if later on there are any bits that stand out as slightly different and you wanna learn them, you can always come back and study them in more detail. Good luck!
