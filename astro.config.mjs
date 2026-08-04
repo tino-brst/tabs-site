@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config'
-import mdx from '@astrojs/mdx'
 import vercel from '@astrojs/vercel'
 import { unified } from '@astrojs/markdown-remark'
 import rehypeHighlight from 'rehype-highlight'
@@ -11,7 +10,6 @@ import tailwindcss from '@tailwindcss/vite'
 // https://docs.astro.build/en/guides/configuring-astro/#the-astro-config-file
 
 export default defineConfig({
-  integrations: [mdx()],
   markdown: {
     // Disables default shiki-based syntax highlighting
     syntaxHighlight: false,
